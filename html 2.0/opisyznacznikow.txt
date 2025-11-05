@@ -1,0 +1,75 @@
+Przykladowy fromularz
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Inputy(legend)</legend>
+            <label for="text">
+            <input type="text" value="przykladowa domyslna wartosc" name="text">
+            </label>
+            <label for="password">
+            <input type="password" maxlength="10" name="password">
+            </label>
+            <label for="checkbox">
+            <input type="checkbox" name="checkbox" checked value="Przykladowy checkbox">
+            </label>
+            <label for="radio">
+            <input type="radio" value="radio button 1" name="radio">
+            <input type="radio" value="radio button 2" name="radio">
+            </label>
+            <label for="submit">
+            <input type="submit" value="Przeslij" name="submit">
+            </label>
+            <label for="reset">
+            <input type="reset" value="Resetuj" name="reset">
+            </label>
+            <label for="button">
+            <input type="button" value="Przycisk" name="button">
+            </label>
+        </fieldset>
+        <label for="textarea">
+            <textarea name="textarea"></textarea>
+        </label>
+        <label for="select">
+            <select name="select" multiple="2">
+                <option value="1">1</option>
+                <option value="opcja">opcja</option>
+            </select>
+        </label>
+    </form>
+
+    _________________________________________________________________________________________________
+
+
+    znaczniki formularz i ich opisy
+
+            </li>
+        <li>
+            textarea - wieloliniowe pole tekstowe. <br>
+            Atrybuty: <br>
+            rows - liczba wierszy <br>
+            cols - liczba kolumn
+
+        </li>
+        <li>
+            select - lista rozwijana. <br>
+            Atrybuty: <br>
+            name - nazwa pola, dla identyfikacji. <br>
+            size - liczba widocznych elementow <br>
+            multiple - ilosc opcji jakie pozna zaznaczyc
+        </li>
+        <li>
+            option - element listy select. <br>
+            Atrybuty: <br>
+            value - Wartosc elementu(nazwa, liczba itp.) <br>
+            selected - czy jest domyslnie wybrany
+        </li>
+        <li>
+            label - etykieta dla pol formularza. <br>
+            Atrybut: <br>
+            for - powiazanie etykiety z polem(for="name obiektu do kotrego przypisujemy label")
+
+        </li>
+        <li>fieldset - grupowanie elementow formularza.</li>
+        <li>legend - tytul dla fieldset.</li>
+        <li>button - przycisk.</li>
+    </ol>

@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <title>Oficjalna strona o HTML</title>
+  </head>
+<body>
+    <h1>HTML - Najnowszy wymiar komunikacji</h1>
+    <isindex>
+    <p>
+      Witamy w przyszlosci dokumentow! Dzieki HTML mozemy laczyc teksty z innymi
+      dokumentami za pomoca niezwyklych "hiperlaczy".<br>
+      Kliknij
+      <a
+        href="https://pl.wikipedia.org/wiki/HTML#Pierwsza_specyfikacja"
+        >tutaj</a
+      >, aby zobaczyc najnowsza strone napisana w tym jezyku, gdzie mozesz
+      dowiedziec sie wiecej.
+    </p>
+
+    <hr>
+
+    <p>Ta strona zostala opracowana w najnowszej technologii html (1991).<br>
+    Internet juz nigdy nie bedzie taki sam.</p>
+
+    <hr>
+
+    <h2>Wszystkie oficjalne znaczniki w HTML</h2>
+    <p> Znaczniki w html zapisuje sie zaczynajac od "<", nastepnie nazwa znacznika,
+      a na koncu ">"</p>
+
+    <hr>
+
+    <h3>Znaczniki struktury</h3>
+    <ul>
+        <li> 
+            html - Otwiera dokument HTML. Wszystko co widac i co nie, musi byc w srodku.
+        </li>
+
+        <li>
+            head - Sekcja naglowka. Tutaj umieszczamy informacje dla przegladarki,
+            ktore uzytkownik zobaczy tylko posrednio.
+        </li>
+
+        <li>
+            title - Tytul strony. wyswietlany w pasku przegladarki lub na liscie
+            stron (element w head).
+        </li>
+
+        <li>
+            body - ostatni znacznik struktury, odpowiada za zawartosc ktora
+            wyswietla sie na stronie, czyli to co widzi uzytkownik.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>Znaczniki naglowkow</h3>
+    <p>
+        Naglowki od najwiekszego (h1) do najmniejszego (h6).
+    </p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <hr>
+        <h3>Tekst i jego wyroznianie</h3>
+        <ol>
+            <li><b>b - pogrubienie</b></li>
+            <li><i>i - kursywa (pochylenie)</i></li>
+            
+        </ol>
+    <hr>
+    <h3>Akapity, tekst</h3>
+    <ol>
+        <li>
+            xmp - tekst doslowny, nie interpretuje znacznikow.
+        </li>
+        <li>
+            p - Akapit - podstawa kazdego dokumentu tekstowego
+        </li>
+        <li>
+            listing - znacznik odpowiadajacy za wyswietlanie tekstu, z zachowaniem znakow bialych, ale nie interpretuje znacznikow bedacych wewnatrz niego.
+        </li>
+        <li>
+            pre - Tekst preformatowany - zachowuje wszystkie znaki biale (spacje i
+            nowe linie), idealny do kodow i diagramow ASCII.
+        </li>
+        <li>address - Informacje o autorze.</li>
+    </ol>
+    <p>Przykladowe uzycie pre do diagramu ASCII:</p>
+    <pre>
+ 
+         ________
+        /       /|
+       /       / |
+      /       /  |
+     |-------|   /
+     |       |  /
+     |       | /
+     |-------|/
+      
+    </pre>
+
+
+
+    <hr>
+    <h3>Linie i podzialy</h3>
+    <ul>
+        <li>
+            hr - linia pozioma
+        </li>
+        <li>
+            br - przelamanie linii, czyli przenosi tekst za nim do nastepnej linijki.
+        </li>
+    </ul>
+    <hr>
+    <h3>Linki i interakcje</h3>
+    <ol>
+        <li>
+            a - hiperlacze, odnosnik do innej strony.
+        </li>
+        <li>
+            isindex - mechanizm wyszukiwania, jeden na strone.
+        </li>
+    </ol>
+    <hr>
+
+    <h3>Listy</h3>
+    <ul>
+        <li>
+            ul - Lista wypunktowana (nie uporzadkowana)
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>
+            ol - Lista numerowana (uporzadkowana)
+        </li>
+    </ol>
+    <p>
+      Do tych 2 list, do wszystkich podpunktow, wykorzystuje sie znacznik li.
+    </p>
+    <p>
+      li - Element listy uporzadkowanej i nieuporzadkowanej - kazdy z elementow
+      w tych listach musi znajdowac sie w li.
+    </p>
+    <br>
+    <dl>
+        <dt>dl - Lista definicji</dt>
+        <dd>
+            Pozwala tworzyc slowniki lub glosariusze.
+        </dd>
+    </dl>
+    <p>
+        Znacznikiem wewnetrznym, listy definicji jest dt oraz dd.
+    </p>
+    <p>dt - Termin w liscie definicji.</p>
+    <p>
+        dd - Wyjasnienie terminu w liscie definicji.
+    </p>
+    <hr />
+    <h3>Cytaty i bloki tekstow</h3>
+    <blockquote>
+      blockquote - Cytat blokowy - wyroznia dluzsze fragmenty cytatow lub
+      tekstow z innych zdrodel.
+    </blockquote>
+    <p>Przyklad:</p>
+    <blockquote>
+      "Ignacego Lukasiewicza znamy jako wynalazce lampy naftowe. Dzisiaj, kiedy
+      lampa naftowa przeszla do lamusa techniki, ustapiwszy miejsca doskonalszym
+      sposobom oswietlenia, wynalazek stracil swoja pierwotna range. Blask
+      zarowek i swietlowek nie przycmil jednak samej postaci naszego rodaka,
+      przeciwnie - na tle dzisiejszgo stanu techniki jeszcze wyrazniej rysuje
+      sie smialosc jego pomyslow, wielkosc jego dziela, pionierska rola
+      Lukasiewicza w polozeniu podwalin pod wielkie przeobrazenia swiata,
+      ktorych dzisiaj jestesmy swiadkami."
+    </blockquote>
+    <p>~ Zbigniew Przyrowski w "Swiatlo z ziemi" z 1973 r.</p>
+    <hr />
+    <h3>Obrazy</h3>
+    <p>Przyklad: </p>
+    <img src="gif.gif">
+    <p>Takiego gifa lub zdjecie mozna dodac taki sposob:</p>
+    <p>img src="nazwa pliku.rozszerzenie (np. XBM/PPM, gif)."</p>
+
+    <hr>
+    <address>
+        Autor: Wiktor Frank<br>
+        Data: Sierpien 1991
+    </address>
+    <p>Na sam koniec znacznik plaintext, ktory uwaga, odpowiada za nie implementowania znacznikow html, czyli wszystko co znajduje sie pod nim wyswietla sie jako zwykly tekst, nie zaleznie od uzytych znacznikow.</p>
+    <hr>
+    <plaintext>
+      znacznik plaintext
+    <p>przykladowy znacznik, jest tutaj znacznik p, ale nie jest on odczytywany przez przegladarke jako znacznik, przez to, ze znajduje pod plaintext. </p>
+</body>
+</html>

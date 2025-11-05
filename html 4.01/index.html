@@ -1,0 +1,488 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Oficjalna strona o HTML 4.01</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="Copyright" content="© 1997 Wiktor Frank">
+    <meta name="Author" content="Wiktor Frank">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="icon.png" type="image.png">
+    <script type="text/javascript" src="main.js"></script>
+
+  </head>
+<body onload="alert()">
+    <!--Przykladowy komentarz widac go tylko w kodzie.-->
+    <h1>HTML 4.01 - Najnowszy oficjalny standard stron internetowych.</h1>
+
+    <p>
+        Jeżeli chcesz zobaczyć dokładniejszy opis specyfikacji Kliknij
+      <a
+        href="https://pl.wikipedia.org/wiki/HTML#Wersje_HTML"
+        >tutaj</a
+      >.
+    </p>
+
+    <hr>
+
+    <p>Ta strona została napisana w języku HTML 4.01 (1999).<br>
+    Strony, które nie tylko działają, ale też wyglądają</p>
+
+    <hr>
+
+    <h2>Wszystkie oficjalne znaczniki w HTML 4.01.</h2>
+    <p> Znaczniki w html zapisuje się zaczynając od &lt;, następnie nazwa znacznika,
+      a na końcu &gt;. Do niektórych znaczników można dodać też atrybuty, wtedy 
+      zaczyna się od &lt;, potem nazwa znacznika, potem atrybuty i ich wartości
+      np. href="link" itp, a na końcu &gt;</p>
+
+    <hr>
+    <a name="znacznikiHtml1"></a>
+    <h2>Znaczniki html 1, które zostały zachowane w html 4.01</h2>
+    <h3>Znaczniki struktury</h3>
+    <ul>
+        <li> 
+            &lt;html&gt; - Otwiera dokument HTML. Wszystko co widać i co nie, musi być w środku.
+        </li>
+
+        <li>
+           &lt;head&gt; - Sekcja naglowka. Tutaj umieszczamy informacje dla przeglądarki,
+            które użytkownik zobaczy tylko pośrednio.
+        </li>
+
+
+
+        <li>
+            &lt;body&gt; - ostatni znacznik struktury, odpowiada za zawartość która
+            wyświetla się na stronie, czyli to co widzi użytkownik.
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Znaczniki głowy (head)</h2>
+    <h3>Znaczniki html 4.01</h3>
+    <p>&lt;link&gt; - Połącznie html z zewnętrznymi plikami, np. css, js.</p>
+    <p>&lt;meta&gt; - Metadane dokumentu, wartości nie pobierane.</p>
+    <p>&lt;title&gt; - Tytuł strony. wyświetlany w pasku przeglądarki lub na liście stron.</p>
+    
+    <hr>
+    <h2>Znaczniki ciała (body)</h2>
+    <h3>Znaczniki nagłówków</h3>
+    <p>
+        Nagłówki od największego (h1) do najmniejszego (h6).
+    </p>
+    <h1>&lt;h1&gt;</h1>
+    <h2>&lt;h2&gt;</h2>
+    <h3>&lt;h3&gt;</h3>
+    <h4>&lt;h4&gt;</h4>
+    <h5>&lt;h5&gt;</h5>
+    <h6>&lt;h6&gt;</h6>
+
+
+    <hr>
+    <h3>Akapity, tekst</h3>
+    <ol>
+        <li>
+            &lt;p&gt; - Akapit - podstawa każdego dokumentu tekstowego.
+        </li>
+        <li>
+            &lt;listing&gt; - znacznik odpowiadajacy za wyświetlanie tekstu, z zachowaniem znaków białych, ale nie interpretuje znaczników będących wewnątrz niego.
+        </li>
+        <li>
+            &lt;pre&gt; - Tekst preformatowany - zachowuje wszystkie znaki białe (spacje i
+            nowe linie), idealny do kodów i diagramów ASCII.
+        </li>
+        <li>&lt;address&gt; - Informacje o autorze.</li>
+    </ol>
+    <p>Przykładowe użycie &lt;pre&gt; do diagramu ASCII:</p>
+    <pre>
+ 
+         ________
+        /       /|
+       /       / |
+      /       /  |
+     |-------|   /
+     |       |  /
+     |       | /
+     |-------|/
+      
+    </pre>
+
+    <hr>
+    <h3>Linie i podziały</h3>
+    <ul>
+        <li>
+            &lt;hr&gt; - linia pozioma
+            Atrybut: <br>
+            noshade - jednolita linia bez cieniowania(efektu wypukłości).
+        </li>
+        <li>
+            &lt;br&gt; - przełamanie lini, czyli przeniesienie tekstu za &lt;br&gt; do nastepnej linijki.
+        </li>
+    </ul>
+    <p>Przykłady użycia atrybutu &lt;hr&gt;:</p>
+
+    <h4>noshade</h4>
+    <h5>hr bez noshade</h5>
+    <hr>
+    <h5>hr z noshade</h5>
+    <hr noshade>
+    <hr>
+    <h3>Linki i interakcje</h3>
+    <ol>
+        <li>
+            &lt;a&gt; - hiperłącze (odnośnik), odnośnik do innej strony. <br>
+
+            name - odnośnik wewnątrz dokumentu, pozwala na szybsze szukanie tresci na stronie.
+            Przyklad: <br>
+            W jednym miejscu tworzymy &lt;a&gt;, o atrybucie name="nazwa", w innym miejsu tworzymy &lt;a href="#nazwa"&gt;. <br>
+            Żeby wszystko działało poprawnie trzeba name i href nadac te same wartości, tyle że w href, należy dodać # na początku (href="#nazwa").
+        </li>
+            
+    </ol>
+    <hr>
+
+    <h3>Listy</h3>
+    <ul>
+        <li>
+            &lt;ul&gt; - Lista wypunktowana (nie uporządkowana)
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>
+            &lt;ol&gt; - Lista numerowana (uporządkowana)
+        </li>
+    </ol>
+    <p>
+      Do tych 2 list, do wszystkich podpunktów, wykorzystuje się znacznik &lt;li&gt;.
+    </p>
+    <p>
+      &lt;li&gt; - Element listy uporzadkowanej i nieuporządkowanej - każdy z elementów
+      w tych listach musi znajdować się w &lt;li&gt;.
+    </p>
+    <br>
+    <dl>
+        <dt>&lt;dl&gt; - Lista definicji</dt>
+        <dd>
+            Pozwala tworzyć słowniki lub glosariusze.
+        </dd>
+    </dl>
+    <p>
+        Znacznikiem wewnętrznym, listy definicji jest &lt;dt&gt; oraz &lt;dd&gt;.
+    </p>
+    <p>&lt;dt&gt; - Termin w liscie definicji.</p>
+    <p>
+        &lt;dd&gt; - Wyjaśnienie terminu w liscie definicji.
+    </p>
+    <hr />
+    <h3>Cytaty i bloki tekstów</h3>
+    <blockquote>
+      &lt;blockquote&gt; - Cytat blokowy - wyróżnia dłuższe fragmenty cytatów lub
+      tekstów z innych źrodeł.
+    </blockquote>
+    <p>Przykład:</p>
+    <blockquote>
+      "Ignacego Łukasiewicza znamy jako wynalazcę lampy naftowej. Dzisiaj, kiedy
+      lampa naftowa przeszła do lamusa techniki, ustąpiwszy miejsca doskonalszym
+      sposobom oświetlenia, wynalazek stracił swoją pierwotną rangę. Blask
+      żarówek i świetlówek nie przyćmił jednak samej postaci naszego rodaka,
+      przeciwnie - na tle dzisiejszgo stanu techniki jeszcze wyraźniej rysuje
+      się smiałość jego pomysłów, wielkość jego dzieła, pionierska rola
+      Łukasiewicza w położeniu podwalin pod wielkie przeobrażenia świata,
+      których dzisiaj jesteśmy świadkami."
+    </blockquote>
+    <p>~ Zbigniew Przyrowski w "Światło z ziemi" z 1973 r.</p>
+    <hr />
+    <h3>Obrazy</h3>
+    <p>Przyklad: </p>
+    <img src="gif.gif" alt="przykladowy gif" title="obraz w gif">
+    <p>Takiego gifa lub zdjęcie można dodać w taki sposób:</p>
+    <p>&lt;img&gt; src="nazwa pliku.rozszerzenie (np. XBM/PPM, gif, png, jpg)."</p>
+    <img src="icon.png" alt="ikona.png" title="ikona w png">
+    <p>
+        Znacznik &lt;img&gt; posiada kilka atrybutów, między innymi alt. <br>
+        alt, to alternatywny opis obrazu na stronie, jeżeli obraz się nie wczyta alt wyswietli się zamiast niego.
+    </p>
+    <p>Przykład: alt="przykładowy alternatywny opis obrazu".</p>
+    <img src="nieistniejacy plik" alt="Przykladowy alternatywny tekst ">
+    <hr>
+    <a name="znacznikiHtml2"></a>
+    <h2>Znaczniki html 2.0, które zostały zachowane w html 4.01.</h2>
+    <h3>&lt;DOCTYPE&gt;</h3>
+    <p>&lt;DOCTYPE&gt; - to znacznik deklaracji wersji języka html.</p>
+    <p>O to jak należy go wpisać w html 4.01:</p>
+    <p>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</p>
+    <p></p>
+    <hr>
+    <h3>Formularze i pola formularzy</h3>
+    <h4>Znaczniki formularzy</h4>
+    <ol>
+        <li>
+            &lt;form&gt; - formularz, pozostałe znaczniki formularza muszą się w nim znajdować, aby wszystko działało poprawnie. <br>
+            Atrybuty: <br>
+            action - URL, na który są wysyłane dane formularza. <br>
+            method - wybór metody przesyłu (GET lub POST). <br>
+            name - Nazwa formularza, umożliwiające identyfikacje w skryptach.
+        </li>
+        <li>&lt;input&gt; - pole formularza, jego zadanie jest zależne od podanej wartości atrybutu type. <br>
+            Najważniejszym atrybutem input jest type, mający pare wartości, które są bardzo potrzebne, aby zadeklarowac działanie pola. <br>
+            Wartości type: <br>
+            <dl>
+                <dt>text</dt>
+                <dd>Jednolinijkowe pole tekstowe.</dd>
+                <dt>password</dt>
+                <dd>Jednolinijkowe pole tekstowe, z tą różnicą, że jest przeznaczone na hasło, z tego powodu wartość jest ukryta wizualnie, aby nie mogły jej zobaczyć osoby nieporządane.</dd>
+                <dt>checkbox</dt>
+                <dd>Pole wyboru, które może zaznaczyć i odznaczyć. Pozwala na wybór jednej lub wielu opcji.</dd>
+                <dt>radio</dt>
+                <dd>Przycisk radiowy, wartość ta wzieła swoją nazwę od odbiorników radiowych, ponieważ korzystając z radia, równierz idzie wybrać tylko jedną stację na raz, a naciśnięcie jedengo przycisku powoduje wylaczenie się poprzedniego. <br>
+            Jak dziala? <br>
+            Jeżeli stworzymy dwa przyciski input type="radio" i nadamy im tego samego name, to będzie można wybrać tylko jeden z nich, a po kliknięciu w drugi pierwszy się wyłączy, oczywiście tak samo działa to po dodaniu większej ilości radio button'ów.</dd>
+                <dt>submit</dt>
+                <dd>Przycisk wysyłający formularz, a następnie zostaje wyświetlony wynik przesłany przez serwer.</dd>
+                <dt>reset</dt>
+                <dd>Przywraca pola do ich domyślnych wartości.</dd>
+            </dl>
+            </li>
+            <br>
+                Poza type, &lt;input&gt; ma jeszcze 5 innych atrybutów. <br>
+                name - nazwa pola, umożliwa identyfikacje danych z pola (wiadomo gdzie ma zostać skierowana wartość w skrypcie). <br>
+                value - wartość domyślna pola lub w przypadku przycisku jest to napis na nim.<br>
+                checked - dla checkbox/radio, oznacza zaznaczone domyślnie. <br>
+                maxlength - maxymalna liczba znaków .
+
+            <li>
+                &lt;textarea&gt; - wieloliniowe pole tekstowe. <br>
+                Atrybuty: <br>
+                rows - liczba wierszy. <br>
+                cols - liczba kolumn.
+
+            </li>
+            <li>
+                &lt;select&gt; - Lista rozwijana. <br>
+                Atrybuty: <br>
+                name - Nazwa pola, dla identyfikacji. <br>
+                multiple - Możliwośś zaznaczenia kilku opcji.
+            </li>
+            <li>
+                &lt;option&gt; - element listy select. <br>
+                Atrybuty: <br>
+                value - Wartość elementu(nazwa, liczba itp). <br>
+                selected - Czy jest domyślnie wybrany.
+            </li>
+
+
+
+    <hr>
+    <h4>Przykładowy formularz</h4>
+    <p>NIE PODAWAJ PRAWDZIWYCH DANYCH W INTERNECIE, JEŻELI NIE JEST TO KONIECZNE, MOŻE TO GROZIĆ ICH KRADZIEŻĄ!</p>
+        <form action="" method="post">
+
+
+            <input type="text" value="przykladowa domyslna wartosc" name="text">
+
+            <input type="password" maxlength="10" name="password">
+
+            <input type="checkbox" name="checkbox" checked value="Przykladowy checkbox">
+
+            <input type="radio" value="radio button 1" name="radio">
+            <input type="radio" value="radio button 2" name="radio">
+
+            <input type="submit" value="Przeslij" name="submit">
+
+            <input type="reset" value="Resetuj" name="reset">
+
+            <select name="select" multiple>
+                <option value="1">1</option>
+                <option value="opcja">opcja</option>
+            </select>
+
+
+
+            <textarea name="textarea">Tutaj znacznik textarea, wpisz tekst.</textarea>
+
+
+
+    </form>
+    <hr>
+    <h4>Tekst i jego wyróżnianie</h4>
+    <ol>
+        <li>
+            <em>&lt;em&gt; - Tekst wyróżniony, zwykle pokazywany w kursywie (NIE OBSLUGIWANY PRZEZ NIEKTÓRE PRZEGLĄDARKI!).</em>
+        </li>
+        <li>
+            <strong>&lt;strong&gt; - Mocniejsze wyróżnienie tekstu, zwykle generowane jako pogrubienie (NIE OBSLUGIWANY PRZEZ NIEKTÓRE PRZEGLĄDARKI!). </strong>
+        </li>
+        <li>
+            <code>&lt;code&gt; - Służy do zaznacznia fragmentów kodu.</code> 
+        </li>
+        <li>
+            <samp>&lt;samp&gt; - Dane wyjściowe programu (output).</samp>
+        </li>
+        <li>
+            <kbd>&lt;kbd&gt; - Dane wejściowe.</kbd>
+        </li>
+        <li>
+            <var>&lt;var&gt; - zmienna programistyczna lub matematyczna.</var>
+        </li>
+
+
+    </ol>
+    <hr>
+    <a name="znacznikiHtml3"></a>
+    <h3>Znaczniki html 3.2, zachowane w html 4.01.</h3>
+    <h4>Tabele</h4>
+    <ol>
+        <li>&lt;table&gt; - znacznik ogólny tabeli, w nim pisze się wszystkie znaczniki w tabeli
+            <br>
+
+            
+        </li>
+        <li>&lt;tr&gt; - wiersz tabeli <br>
+        Atrybuty: <br>
+            
+        
+
+
+        </li>
+        <li>&lt;td&gt; - komórka danych tabeli <br>
+        Atrybuty: <br>
+            
+
+        colspan - łączenie komórek poziomo (kolumnami) <br>
+        rowspan - łączenie komórek pionowo (wierszami)
+    
+    </li>
+        <li>&lt;th&gt; - komórka nagłówkowa tabeli <br>
+        Atrybuty: <br>
+            
+
+        colspan - łączenie komórek poziomo (kolumnami) <br>
+        rowspan - łączenie komórek pionowo (wierszami)</li>
+    </ol>
+    <table>
+        <tr>
+            <th>&lt;th&gt; - nagłówek</th>
+            <td colspan="2">&lt;td&gt; - komórka</td>
+        </tr>
+        <tr>
+            <th rowspan="4">&lt;th&gt; - nagłówek</th>
+            <td>&lt;td&gt; - komórka</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt; - komórka</td>
+            <td>&lt;td&gt; - komórka</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt; - komórka</td>
+        </tr>
+
+    </table>
+    <hr>
+    <h4>Skrypty</h4>
+    <p>&lt;script&gt; - Umożliwia pisanie lub podłączanie zewnętrznych skryptów, czyli funkcji programu (najczęściej JavaScript).</p>
+    <script type="text/javascript" src="main.js"></script>
+    <p>NOWE!!!</p>
+    <p>Odnosząc się do tego skryptów, które w poprzednej wersji były bardzo ubogie w możliwości, w wersji html 4.01, nabrały kolorytu.
+
+    </p>
+    <p>Teraz między innymi oficjalnie można łączyć zewnętrzne pliki .js, dzięki czemu łatwiej utzrymać porządek w kodzie. </p>
+    <p>Z tego powodu składnia się troche zmeniła.</p>
+    <h4>Opcja numer 1</h4>
+    <p>Pisanie skryptu bezpośrednio w pliku html:</p>
+    <p>&lt;script&gt; type="text/javascript" >
+        "treść skryptu"
+    &lt;/script&gt;</p>
+    <h4>Opcja numer 2</h4>
+    <p>Pisanie skryptu w osobnym pliku</p>
+    &lt;script&gt; type="text/javascript" src="nazwa_pliku.js">&lt;/script&gt;
+    <p>W tym przypadku jest to akurat JavaScript.</p>
+    <p>Nastepny problem to fakt, że większość osób niezna tego języka i jego funkcji, więc zostaną one tutaj opisane</p>
+    <h4>Operacje w JS</h4>
+    <p>Pierwszą operacją będzie alert, umożliwia on wysyłanie komunikatu nastronie, który wyświetla się w wyskakującym okienku.</p>
+    <p><code>    function alert(){
+        alert("Witaj na oficjalnej stornie, o standardach internetowych. W tym HTML 4.01, CSS oraz JS.");
+    }</code></p>
+    <p>Zaczynając od początku mamy <strong>function</strong>, czyli po prostu funkcje, dzięki nie po przeprowadzniu jakichś obliczeń raz mamy już zapamiętane jaki był ich przebieg, dzieki, czemu wystarczy się do niej odnieść, aby powtorzyć tak ową funkję</p>
+    <p>Następnie jest <strong>nazwa funkcji</strong>, funkcje muszą mieć nazwy, aby dało się je identyfikować w kodzie.</p>
+    <p>Potem mamy <strong>klamry"{}"</strong>, które oznaczają zawartość funkcji.</p>
+    <p>Następnie jest <strong>działanie</strong>, w tym przypadku <strong>alert</strong>, czyli własnie to wyskakujące okienko.</p>
+    <p>To co jest na prawo od działania, to zazwyczaj <strong>atrybuty</strong> i znajdują się w nawiasach, w tym przypdku mamy alert o <strong>wartości</strong> "Witaj na oficjalnej stornie, o standardach internetowych. W tym HTML 4.01, CSS oraz JS.".</p>
+    <p>Jest to wartość w <strong>stringu</strong>, czyli w ciągu znaków, ciąg znaków to taka jakby <strong>tablica indekoswana</strong>, gdzie każdy znak ma osobny indexs, ale do tego przejdziemy potem ,najważneijsze jest to że ten typ danych, może przechowywać wszystkie znaki.</p>
+    <p>Jak już jesteśmy w temacie typów danych, to możemy je po krótce omówić.</p>
+    <p>Pierwszy, czyli string, już znamy. Następny jest <strong>Undefined</strong>, czyli zmienna, bez wartości.</p>
+    <p>Na co komu zmienna bez wartości?</p>
+    <p>Przydaje się ona dla tego, że możesz stworzyć zmienną bez wartości, a następnie ją nadpisać.</p>
+    <p>Kolejny jest <strong>null</strong>  czyli wartość pusta, niby to samo co poprzednie, ale jednak wartość jest, tylko ta wartość jest pusta, co ozancza, że można się do niej odnieść, ale nic nie wnosi.</p>
+    <p>W końcu zaczynają się ciekawe typy danych, a więc <strong>boolean</strong>, czyli wartość fałszywa lub prawdziwa, boolean, posiada tylko dwie wartości, <em>true</em> lub <em>false</em>, dzięki temu można przypisać mu wartość wyniku jakiegoś działania, jako np. prawdziwe, bo wynik był poprawny dla danego twierdzenia, abo można wysłać mu fałsz, czyli wartość błedną dla danego zadania, dzięki temu mogą zostać wykonane dwa rózne wydarzenia, w zależności od prawdziwości wartości, względem oczekiwanego rezulatu.</p>
+    <p>Następnie mamy <strong>number</strong>, czyli typ, który pozwala przechowywać liczby, ale nie tylko. Wartość typu number, moze przechowywać takie wartości jak <strong>NaN</strong>, czyli nie jest liczbą lub <strong>Infinity</strong>, czyli nieskończoność.</p>
+    <p>A na sam koniec, jedyny w swoim rodzaju Object, to jedyny typ złożony w js.</p>
+    <p>Odpowiada za przechowywanie wartości obiektowych, których w js jest pełno, a z czasem, mogę poręczyć, że pojawi się tylko coraz więcej.</p>
+    <p>Do wartości typu object, należą, takie elementy jak, <strong>tablice Array</strong>, czyli tablice indeksowae, od 0 do wyznaczonego maximum. Funkcje, czyli instrukcje działań, które przyśpieszaja pisanie, oczyszczają kod z niepotrzebnych linijek, a jednoczesnie, zabezpieczają sprzęt i dziłanie programu. </p>
+    <p>Do innych klas elementów mieszczących się w typie danych Object, należą <strong>Math</strong>(Zbiór funkcji matematycznych) oraz <strong>Date</strong>(zbiór wartości czasowych). </p>
+    <p>Dodatkowo do elemntów obiektowych należą równierz <strong>RegExp</strong>, <strong>Error</strong>, oraz <strong>Number</strong>, <strong>String</strong> i <strong>Boolean</strong>, tyle że w wersji obiektowej, a różnica w pisowni, jest w pierwszej, małej, bądź dużej literze.</p>
+    <p>RegExp odpowiada za zauważanie schematów, wzorców. Poza możliwością true/false, jest jeszcze wersja z null. Można go zastosować np. do sprwadzania, czy mail został poprawnie wpisany, przez użytkownika.</p>
+    <p>Natomiast Error, słuzy do tworzenia własnych błedów, ponieważ, błędy nie wychwycone, z reguły psują działanie całej reszty kodu.</p>
+
+    <p>Tutaj formularz z zastosowaniem tych elemetnów, a pod nim wytłuamczenie.</p>
+    
+        <input type="text" name="mail">
+        <button onclick="Sprawdzanie_maila()">Sprawdź</button>
+    
+    <hr>
+    <address>
+        Autor: Wiktor Frank<br>
+        Email: wiktorfrank09@gmail.com
+    </address>
+    <h4>Wycofane znaczniki</h4>
+    <h5>Html 1 i 2</h5>
+    <p>&lt;xmp&gt; - niepraktyczny</p>
+    <p>&lt;plaintext&gt; - niepraktyczny</p>
+    <h5>Html 3.2 i 4.0</h5>
+    <p>&lt;font&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;center&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;u&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;basefont&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;strike&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;s&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;big&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;small&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;tt&gt; - uznany za przestarzały i zastąpiony css.</p>
+    <p>&lt;applet&gt; - zastąpiony przez &lt;object&gt; lub &lt;embed&gt;.</p>
+    <p>&lt;dir&gt; - przez podobne działanie zastąpiony &lt;ul&gt; i &lt;ol&gt;.</p>
+    <p>&lt;isindex&gt; - usunięty całkowicie ze względu na nie optymalne działanie.</p>
+    <p>&lt;menu&gt; - przez podobne działanie zastąpiony &lt;ul&gt; i &lt;ol&gt;.</p>
+    <hr>
+    <p>Niezalecane znaczniki</p>
+    <p>Znaczniki typu frames - powodują problemy z nawigacją i dostępnością</p>
+    <p>&lt;listing&gt;  - lepiej uzywac &lt;pre&gt;.</p>
+    <p>&lt;i&gt; - zaleca się zastąpić &lt;em&gt; lub &lt;strong&gt;</p>
+    <p>&lt;b&gt; - zaleca się zastąpić &lt;em&gt; lub &lt;strong&gt;</p>
+
+    <hr>
+
+    <h4>Wycofane atrybuty</h4>
+    <p>bgcolor - uznany za przestarzały i zastąpiony css.</p>
+    <p>text - uznany za przestarzały i zastąpiony css.</p>
+    <p>link - uznany za przestarzały i zastąpiony css.</p>
+    <p>vlink - uznany za przestarzały i zastąpiony css.</p>
+    <p>alink - uznany za przestarzały i zastąpiony css.</p>
+    <p>bordercolor - uznany za przestarzały i zastąpiony css.</p>
+    <p>cellpadding - uznany za przestarzały i zastąpiony css.</p>
+    <p>cellspacing - uznany za przestarzały i zastąpiony css.</p>
+    <p>width - uznany za przestarzały i zastąpiony css.</p>
+    <p>height - uznany za przestarzały i zastąpiony css.</p>
+    <p>align - uznany za przestarzały i zastąpiony css.</p>
+    <p>border - uznany za przestarzały i zastąpiony css.</p>
+    <p>hspace - uznany za przestarzały i zastąpiony css.</p>
+    <p>vspace - uznany za przestarzały i zastąpiony css.</p>
+    <p>size - uznany za przestarzały i zastąpiony css.</p>
+    <p>color - uznany za przestarzały i zastąpiony css.</p>
+    <p>valign - uznany za przestarzały i zastąpiony css.</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>Oficjalna strona o HTML 3.2</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="Copyright" content="© 1997 Wiktor Frank">
+    <meta name="Author" content="Wiktor Frank">
+
+  </head>
+<body bgcolor="#F3FFF0" alink="#F3FFF0" vlink="#12FF00" link="#122199" >
+    <!--Przykladowy komentarz widac go tylko w kodzie.-->
+    <h1>HTML 3.2 - Najnowszy oficjalny standard stron internetowych.</h1>
+    <isindex prompt="Wpisz szukane haslo:">
+        <menu>
+            <a href="#znacznikiHtml1">Znaczniki html 1</a><br>
+            <a href="#znacznikiHtml2">Znaczniki html 2.0</a><br>
+            <a href="#znacznikiHtml3">Znaczniki html 3.2</a>
+        </menu>
+    <p>
+        Jezeli chcesz zobaczyc dokladniejszy opis specyfikacji Kliknij
+      <a
+        href="https://pl.wikipedia.org/wiki/HTML#Wersje_HTML"
+        >tutaj</a
+      >.
+    </p>
+
+    <hr>
+
+    <p>Ta strona zostala napisana w jezyku HTML 3.2 (1997).<br>
+    Nowsza wersja html, najlepsza jakosc stron internetowych.</p>
+
+    <hr>
+
+    <h2>Wszystkie oficjalne znaczniki w HTML 3.2</h2>
+    <p> Znaczniki w html zapisuje sie zaczynajac od &lt;, nastepnie nazwa znacznika,
+      a na koncu &gt;. Do niektorych znacznikow mozna dodac tez atrybuty, wtedy 
+      zaczyna sie od &lt;, potem nazwa znacznika, potem atrybuty i ich wartosci
+      np. href="link" align="right" itp, a na koncu &gt;</p>
+
+    <hr>
+    <a name="znacznikiHtml1"></a>
+    <h2>Znaczniki html 1, ktore zostaly zachowane w html 3.2</h2>
+    <h3>Znaczniki struktury</h3>
+    <ul>
+        <li> 
+            &lt;html&gt; - Otwiera dokument HTML. Wszystko co widac i co nie, musi byc w srodku.
+        </li>
+
+        <li>
+           &lt;head&gt; - Sekcja naglowka. Tutaj umieszczamy informacje dla przegladarki,
+            ktore uzytkownik zobaczy tylko posrednio.
+        </li>
+
+        <li>
+            &lt;title&gt; - Tytul strony. wyswietlany w pasku przegladarki lub na liscie
+            stron.
+        </li>
+
+        <li>
+            &lt;body&gt; - ostatni znacznik struktury, odpowiada za zawartosc ktora
+            wyswietla sie na stronie, czyli to co widzi uzytkownik.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>Znaczniki naglowkow</h3>
+    <p>
+        Naglowki od najwiekszego (h1) do najmniejszego (h6).
+    </p>
+    <h1>&lt;h1&gt;</h1>
+    <h2>&lt;h2&gt;</h2>
+    <h3>&lt;h3&gt;</h3>
+    <h4>&lt;h4&gt;</h4>
+    <h5>&lt;h5&gt;</h5>
+    <h6>&lt;h6&gt;</h6>
+
+    <hr>
+    <h3>Tekst i jego wyroznianie</h3>
+        <ol>
+            <li><b>&lt;b&gt; - pogrubienie</b></li>
+            <li><i>&lt;i&gt; - kursywa(pochylenie)</i></li>
+            
+        </ol>
+    <hr>
+    <h3>Akapity, tekst</h3>
+    <ol>
+        <li>
+            &lt;p&gt; - Akapit - podstawa kazdego dokumentu tekstowego.
+        </li>
+        <li>
+            &lt;listing&gt; - znacznik odpowiadajacy za wyswietlanie tekstu, z zachowaniem znakow bialych, ale nie interpretuje znacznikow bedacych wewnatrz niego.
+        </li>
+        <li>
+            &lt;pre&gt; - Tekst preformatowany - zachowuje wszystkie znaki biale (spacje i
+            nowe linie), idealny do kodow i diagramow ASCII.
+        </li>
+        <li>&lt;address&gt; - Informacje o autorze.</li>
+    </ol>
+    <p>Przykladowe uzycie &lt;pre&gt; do diagramu ASCII:</p>
+    <pre>
+ 
+         ________
+        /       /|
+       /       / |
+      /       /  |
+     |-------|   /
+     |       |  /
+     |       | /
+     |-------|/
+      
+    </pre>
+
+    <hr>
+    <h3>Linie i podzialy</h3>
+    <ul>
+        <li>
+            &lt;hr&gt; - linia pozioma
+            Atrybuty: <br>
+            width - szerokosc wyrazona w procentach<br>
+            size - wysokosc w pixelach<br>
+            noshade - jednolita linia bez cieniowania(efektu wypuklosci).
+        </li>
+        <li>
+            &lt;br&gt; - przelamanie lini, czyli przenosi tekst za nim do nastepnej linijki.
+        </li>
+    </ul>
+    <p>Przyklady uzycia atrybutow hr</p>
+    <h4>align</h4>
+    <hr align="right">
+    <hr align="left">
+    <h4>width</h4>
+    <h5>10%</h5>
+    <hr width="10%">
+    <h5>50%</h5>
+    <hr width="50%">
+    <h5>70%</h5>
+    <hr width="70%">
+    <h4>size</h4>
+    <h5>size = 1</h5>
+    <hr size="1">
+    <h5>size = 3</h5>
+    <hr size="3">
+    <h5>size = 5</h5>
+    <hr size="5">
+    <h4>noshade</h4>
+    <h5>hr bez noshade</h5>
+    <hr>
+    <h5>hr z noshade</h5>
+    <hr noshade>
+    <hr>
+    <h3>Linki i interakcje</h3>
+    <ol>
+        <li>
+            &lt;a&gt; - hiperlacze (odnosnik), odnosnik do innej strony. <br>
+            NOWY ATRYBUT! <br>
+            name - odnosnik wewnatrz dokumentu, pozwala na szybsze szukanie tresci na stronie.
+            Przyklad: <br>
+            W jednym miejscu tworzymu a, o atrybucie name="nazwa", w innym miejsu tworzymy a href="#nazwa". <br>
+            Zeby wszystko dzialalo poprawnie trzeba name i href nadac te same wartosci, tyle ze w href, nalezy dodac #.
+        </li>
+            
+        <li>
+            &lt;isindex&gt; - mechanizm wyszukiwania, jeden na strone. <br>
+            NOWY ATRYBUT! <br>
+            prompt - instrukcja dla uzytkownika.
+            
+        </li>
+    </ol>
+    <hr>
+
+    <h3>Listy</h3>
+    <ul>
+        <li>
+            &lt;ul&gt; - Lista wypunktowana (nie uporzadkowana)
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>
+            &lt;ol&gt; - Lista numerowana (uporzadkowana)
+        </li>
+    </ol>
+    <p>
+      Do tych 2 list, do wszystkich podpunktow, wykorzystuje sie znacznik &lt;li&gt;.
+    </p>
+    <p>
+      &lt;li&gt; - Element listy uporzadkowanej i nieuporzadkowanej - kazdy z elementow
+      w tych listach musi znajdowac sie w li.
+    </p>
+    <br>
+    <dl>
+        <dt>&lt;dl&gt; - Lista definicji</dt>
+        <dd>
+            Pozwala tworzyc slowniki lub glosariusze.
+        </dd>
+    </dl>
+    <p>
+        Znacznikiem wewnetrznym, listy definicji jest &lt;dt&gt; oraz &lt;dd&gt;.
+    </p>
+    <p>&lt;dt&gt; - Termin w liscie definicji.</p>
+    <p>
+        &lt;dd&gt; - Wyjasnienie terminu w liscie definicji.
+    </p>
+    <hr />
+    <h3>Cytaty i bloki tekstow</h3>
+    <blockquote>
+      &lt;blockquote&gt; - Cytat blokowy - wyroznia dluzsze fragmenty cytatow lub
+      tekstow z innych zdrodel.
+    </blockquote>
+    <p>Przyklad:</p>
+    <blockquote>
+      "Ignacego Lukasiewicza znamy jako wynalazce lampy naftowe. Dzisiaj, kiedy
+      lampa naftowa przeszla do lamusa techniki, ustapiwszy miejsca doskonalszym
+      sposobom oswietlenia, wynalazek stracil swoja pierwotna range. Blask
+      zarowek i swietlowek nie przycmil jednak samej postaci naszego rodaka,
+      przeciwnie - na tle dzisiejszgo stanu techniki jeszcze wyrazniej rysuje
+      sie smialosc jego pomyslow, wielkosc jego dziela, pionierska rola
+      Lukasiewicza w polozeniu podwalin pod wielkie przeobrazenia swiata,
+      ktorych dzisiaj jestesmy swiadkami."
+    </blockquote>
+    <p>~ Zbigniew Przyrowski w "Swiatlo z ziemi" z 1973 r.</p>
+    <hr />
+    <h3>Obrazy</h3>
+    <p>Przyklad: </p>
+    <img src="gif.gif" alt="przykladowy gif" width="64">
+    <p>Takiego gifa lub zdjecie mozna dodac taki sposob:</p>
+    <p>&lt;img&gt; src="nazwa pliku.rozszerzenie (np. XBM/PPM, gif)."</p>
+    <p>
+        Znacznik &lt;img&gt; posiada kilka atrybutow, miedzy innymi alt. <br>
+        alt, to alternatywny opis obrazu na stronie, jezeli obraz sie nie wczyta alt wyswietli sie zamiast niego.
+    </p>
+    <p>
+        nastepne atrybuty to atrybuty bardziej zmieniajace wielkosc i polozenie obrazu. <br>
+        width - Szerokosc wyrazona w pixelach.<br>           
+        height - Wysokosc wyrazona w pixelach.
+        vspace - Margines pionowy.
+        hspace - Margines poziomy.
+    </p>
+    <p>Przyklad: alt="przykladowy alternatywny opis obrazu".</p>
+    <img src="nieistniejacy plik" alt="Przykladowy alternatywny tekst ">
+    <hr>
+    <a name="znacznikiHtml2"></a>
+    <h2>Znaczniki html 2.0, ktore zostaly zachowane w html 3.2.</h2>
+    <h3>&lt;DOCTYPE&gt;</h3>
+    <p>&lt;DOCTYPE&gt; - To znacznik deklaracji wersji jezyka html.</p>
+    <p>O to jak nalezy go wpisac:</p>
+    <p>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</p>
+    <p></p>
+    <hr>
+    <h3>Formularze i pola formularzy</h3>
+    <h4>Znaczniki formularzy</h4>
+    <ol>
+        <li>
+            &lt;form&gt; - Formularz, pozostale znaczniki formularza musza sie w nim znajdowac, aby wszystko dzialalo poprawnie. <br>
+            Atrybuty: <br>
+            action - URL, na ktory sa wysylane dane formularza. <br>
+            method - Wybor metody przesylu (GET lub POST). <br>
+            name - Nazwa formularza, umozliwiajace identyfikacje w skryptach.
+        </li>
+        <li>&lt;input&gt; - Pole formularza, jego zadanie jest zalezne od podanej wartosci atrybutu type. <br>
+            Najwazniejszym atrybutem input jest type, majacy pare wartosci, ktore sa bardzo potrzebne, aby zadeklarowac dzialanie pola. <br>
+            Wartosci type: <br>
+            <dl>
+                <dt>text</dt>
+                <dd>jednolinijkowe pole tekstowe.</dd>
+                <dt>password</dt>
+                <dd>jednolinijkowe pole tekstowe, z ta roznica, ze jest przeznaczone na haslo, z tego powodu wartosc jest ukryta wizualnie, aby nie moglyjej zobaczyc osoby nieporzadane</dd>
+                <dt>checkbox</dt>
+                <dd>pole wyboru, ktore moze zaznaczyc i odznaczyc. Pozwala na wybor jednej lub wielu opcji.</dd>
+                <dt>radio</dt>
+                <dd>przycisk radiowy, wartosc ta wziela swoja nazwe od odbiornikow radiowych, poniewaz korzystajac z radia, rownierz idzie wybrac tylko jedna stacje naraz, a nacisniecie jedengo przycisku powoduje wylaczenie sie poprzedniego. <br>
+            Jak dziala? <br>
+            jezeli stworzymy dwa przyciski input type="radio" i nadamy im tego samego name, to bedzie mozna wybrac tylko jeden znich, a po klikneciu w drugi pierwszy sie wylaczy, oczywiscie tak samo dzial to po dodaniu wiekszej ilosci radio button'ow.</dd>
+                <dt>submit</dt>
+                <dd>przycisk wysylajacy formularz, a nastepnie zostaje wyswietlony wynik przeslany przez serwer.</dd>
+                <dt>reset</dt>
+                <dd>przywraca pola do ich domyslnych wartosci.</dd>
+            </dl>
+            </li>
+            <br>
+                Poza type, &lt;input&gt; ma jeszcze 5 innych atrybutow. <br>
+                name - Nazwa pola, umozliwa identyfikacje danych z pola (wiadomo gdzie ma zostac skierowana wartosc w skrypcie). <br>
+                value - Wartosc domyslna pola lub w przypadku przycisku jest to npais na nim.<br>
+                checked - Dla checkbox/radio, oznacza zaznaczone domyslnie <br>
+                maxlength - Maxymalna liczba znakow <br>
+                size - Szerokosc pola wyrazona w znakach.
+
+            <li>
+                &lt;textarea&gt; - Wieloliniowe pole tekstowe. <br>
+                Atrybuty: <br>
+                rows - Liczba wierszy <br>
+                cols - Liczba kolumn
+
+            </li>
+            <li>
+                &lt;select&gt; - Lista rozwijana. <br>
+                Atrybuty: <br>
+                name - Nazwa pola, dla identyfikacji. <br>
+                size - Liczba widocznych elementow <br>
+                multiple - Mozliwosc zaznaczenia kilku opcji.
+            </li>
+            <li>
+                &lt;option&gt; - Element listy select. <br>
+                Atrybuty: <br>
+                value - Wartosc elementu(nazwa, liczba itp.) <br>
+                selected - Czy jest domyslnie wybrany
+            </li>
+
+
+
+    <hr size="4">
+    <h4>Przykladowy formularz</h4>
+    <p>NIE PODAWAJ PRAWDZIWYCH DANYCH W INTERNECIE, JEZELI NIE JEST TO KONIECZNE, MOZE TO GROZIC ICH KRADZIEZA!</p>
+        <form action="" method="post">
+
+
+            <input type="text" value="przykladowa domyslna wartosc" name="text">
+
+            <input type="password" maxlength="10" name="password">
+
+            <input type="checkbox" name="checkbox" checked value="Przykladowy checkbox">
+
+            <input type="radio" value="radio button 1" name="radio">
+            <input type="radio" value="radio button 2" name="radio">
+
+            <input type="submit" value="Przeslij" name="submit">
+
+            <input type="reset" value="Resetuj" name="reset">
+
+            <select name="select" multiple>
+                <option value="1">1</option>
+                <option value="opcja">opcja</option>
+            </select>
+
+
+
+            <textarea name="textarea">Tutaj znacznik textarea, wpisz tekst.</textarea>
+
+
+
+    </form>
+    <hr>
+    <h4>Tekst i jego wyroznianie</h4>
+    <ol>
+        <li>
+            <em>&lt;em&gt; - Tekst wyrozniony, zwykle pokazywany w kursywie (NIE OBSLUGIWANY PRZEZ NIEKTORE PRZEGLADARKI!).</em>
+        </li>
+        <li>
+            <strong>&lt;strong&gt; - Mocniejsze wyroznienie tekstu, zwykle generowane jako pogrubienie (NIE OBSLUGIWANY PRZEZ NIEKTORE PRZEGLADARKI!). </strong>
+        </li>
+        <li>
+            <code>&lt;code&gt; - Sluzy do zaznacznia fragmentow kodu.</code> 
+        </li>
+        <li>
+            <samp>&lt;samp&gt; - Dane wyjsciowe programu (output).</samp>
+        </li>
+        <li>
+            <kbd>&lt;kbd&gt; - Dane wejsciowe.</kbd>
+        </li>
+        <li>
+            <var>&lt;var&gt; - Zmienna programistyczna lub matematyczna.</var>
+        </li>
+        <li>
+            <tt>&lt;tt&gt; - Tekst o stalej szerokosci, typowy dla kodu.</tt>
+        </li>
+
+    </ol>
+    <hr>
+    <a name="znacznikiHtml3"></a>
+    <h3>NOWE ZNACZNIKI HTML 3.2!</h3>
+    <h4>Tabele</h4>
+    <ol>
+        <li>&lt;table&gt; - Znacznik ogolny tabeli, w nim pisze sie wszystkie znaczniki w tabeli
+            <br>
+            Atrybuty: <br>
+            border - Ramka wyrazana w wielkosci liczbowej, np. border="1" <br>
+            cellpadding - Odstep miedzy trescia komorki, a jej krawedzia, np. cellpadding="2" <br>
+            cellspacing - Odstep pomiedzy komorkami tabeli, np. cellspacing="3" <br>
+            bgcolor - Kolor tla (np. bgcolor="#FFFF00")
+        </li>
+        <li>&lt;tr&gt; - Wiersz tabeli <br>
+        Atrybuty: <br>
+            
+
+        valign - Polozenie zawartosci w pionie <br>
+        bgcolor - Kolor tla
+        </li>
+        <li>&lt;td&gt; - Komorka danych tabeli <br>
+        Atrybuty: <br>
+            
+
+        valign - Polozenie zawartosci w pionie <br>
+        bgcolor - Kolor tla <br>
+        colspan - Lacznie komorek poziomo  (kolumnami) <br>
+        rowspan - Laczenie komorek pionowo (wierszami)
+    
+    </li>
+        <li>&lt;th&gt; - Komorka naglowkowa tabeli <br>
+        Atrybuty: <br>
+            
+
+        valign - Polozenie zawartosci w pionie <br>
+        bgcolor - Kolor tla <br>
+        colspan - Lacznie komorek poziomo  (kolumnami) <br>
+        rowspan - Laczenie komorek pionowo (wierszami)</li>
+    </ol>
+    <table border="2" cellpadding="2" align="center" bgcolor="#FFFF00">
+        <tr>
+            <th>&lt;th&gt; - Naglowek</th>
+            <td colspan="2">&lt;td&gt; - Komorka</td>
+        </tr>
+        <tr>
+            <th rowspan="4" valign="top">&lt;th&gt; - Naglowek</th>
+            <td>&lt;td&gt; - Komorka</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt; - Komorka</td>
+            <td>&lt;td&gt; - komorka</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt; - Komorka</td>
+        </tr>
+
+    </table>
+    <hr>
+    <h4>Prezentacja Tekstu</h4>
+    <ol>
+        <li><font face="Arial" size="4" color="red">&lt;font&gt; - Sluzy do nadawania koloru, czcionki i rozmiaru, tekstu znajdujacego sie w jego wnetrzu.</font></li>
+        <li><center>&lt;center&gt; - Centruje tekst i elementy blokowe, ktore znajduja sie wewnatrz.</center></li>
+        <li><u>&lt;u&gt; - Podkreslenie tekstu</u></li>
+        <li><strike>&lt;strike&gt; - Przekreslenie tekstu</strike></li>
+    </ol>
+    <hr>
+    <h4>Nowa lista</h4>
+    <p>&lt;menu&gt; - Sluzy do tworzenia menu strony</p>
+    <hr>
+    <h4>Skrypty</h4>
+    <p>Znacznik &lt;applet&gt;</p>
+    <p>Sluzy do towrzenia interaktywnych elementow stron za pomoca Javy.</p>
+    <p>UWAGA!</p>
+    <p>W niektorych sytuacjach moze byc nie stabilny i nie dziala bez zaintsalowanej wtyczki.</p>
+    <p>Jego atrybuty to:</p>
+    <p>code - Zrodlo kodu Java.</p>
+    <p>codebase - Sciezka zrodlowa do kodu (jezeli nie znajduje sie w tym samym miejscu co plik html).</p>
+    <p>archive - Pozwala na skorzystanie z jednego pliku z wieoma klasami i zastosowanie np. tylko jednej z nich (nie obowiazkowe).</p>
+    <p>name - Nazwa okreslajaca konkretny skrypt w tekscie, umozliwia to lepsza identyfikacje elementow i latwiejsze ich rozroznianie. </p>
+    <p>width - Szerokosc</p>
+    <p>height - Wysokosc</p>
+    <p>alt - Tekst alternatywny, chociaz czesciej zamist neigo wpisuje sie tekst miedzy znacznikiem otwarcia i zamknie, jezeli Skrypt sie nie odpali, wyswietli sie ten tekst.</p>
+    <p>hspace - Margines poziomy</p>
+    <p>vspace - Margines pionowy</p>
+    <applet code="HelloWorld.class" width="200" height="100" >
+        Cos poszlo nie tak! Problemem moze byc twoja wtyczka lub polaczenie z serwerem
+    </applet>
+    <p>Na sam koniec znacznik &lt;script&gt;, ktory umozliwia pisanie skryptow, czyli funkcji programu.</p>
+    <script language="JavaScript">document.write("Witaj w HTML 3.2!");</script>
+    <p>W tym przypadku napisalem funkcje, ktora wypisuje tresc "Witaj w HTML 3.2!"</p>
+    <p>Atrybutem znacznika &lt;script&gt; jest:</p>
+    <p>language="JezykProgramowaniaSryptu"</p>
+    <p>A tutaj jak napisac taki skrypt:</p>
+    <p>&lt;script language=JavaScript&gt;document.write("Witaj w HTML 3.2");&lt;/script&gt;</p>
+    <hr>
+    <h4>Atrybuty ogolne strony</h4>
+    <p>bgcolor - Kolor tla.</p>
+    <p>link - Kolor niekliknietych linkow.</p>
+    <p>vlink - Kolor kliknietych linkow.</p>
+    <p>alink - Kolor linkow w trakcie klikniecia.</p>
+    <p>title - Tworzenie podpowiedzi po najechaniu.</p>
+    <p>align - Polozenie, dziala w wielu zancznikach, ale nie we wszystkich.</p>
+    <hr size="4">
+    <address>
+        Autor: Wiktor Frank<br>
+        Data: Styczen 1997 r.
+    </address>
+    <p>Wycofane znaczniki</p>
+    <p>xmp - Niepraktyczny</p>
+    <p>plaintext - Niepraktyczny</p>
+    <hr>
+    <p>Niezalecane znaczniki</p>
+    <p>dir - Prawdopodobnie, wedlug przeslanek ma zostac usuniety, ze wzgledu na jego bardzo podobne do &lt;ul&gt; dzialanie.</p>
+    <p>listing  - Lepiej uzywac &lt;pre&gt;.</p>
+
+
+</body>
+</html>

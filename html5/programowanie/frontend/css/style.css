@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 247, 232);
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex; 
+}
+
+header{
+    text-align: center;
+    background-image: url("/assets/htmlHeaderTheme.png");
+    border-bottom: 5px black solid;
+    color: white;
+    background-size: cover;
+    height: 180px;
+}
+
+header h1, header h2{
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    border-radius: 15px;
+    padding: 3px;
+    border: white 2px solid;
+}
+
+main{
+    background-color: #EFF1f3;
+    flex: 1;
+    text-align: center;
+    padding: 20px; 
+}
+
+footer{
+
+    background-color: #272727;
+    border-top: 5px solid white;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+
+
+}
+
+
+.contentSection, #contactInformation, .atributes, #socials{
+    width: 70%;
+    margin: 3px auto 20px auto;
+    border: 2px solid #333;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    
+
+}
+.contentSection{
+    border: 2px solid #009fb7;
+    background-color: #fed766 ;
+    
+}
+
+.contentSection ul{
+    list-style-type: none;
+}
+
+#subMainMenu{
+    display: none;
+}
+
+#secondSubMeny{
+    display: none;
+}
+
+#mainMenuOption{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#mainMenuOption.active {
+    display: block;
+}
+
+.atribute{
+    margin-bottom: 20px;
+
+}
+
+#mainMenu{
+    
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2px;
+    padding: 3px;
+    border-radius: 12px;
+    background-color: black;
+    border: white 2px solid;
+
+}
+
+.contentSection p{
+    margin-bottom: 5px;
+}
+
+#htmlTagAttributes{
+    display: none;
+}
+
+header nav{
+    border: none;
+}
+
+
+#subMenu{
+    border: white 2px solid;
+    width: fit-content;
+    margin: auto;
+    padding: 3px;
+    border-radius: 12px;
+    background-color: black;
+    margin-bottom: 2px;
+
+}
+
+#menu{
+    height: fit-content;
+    display: flex;
+}
+
+#socials ul{
+        list-style-type: none;
+}
+
+
+#gitHubAnchor {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* odstęp między logo a linkiem */
+}
+
+#gitHubAnchor img {
+    width: 24px; /* dopasuj rozmiar */
+    height: 24px;
+}

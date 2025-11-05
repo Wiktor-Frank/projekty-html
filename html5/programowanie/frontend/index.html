@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Main Website Metadata-->
+    <meta
+      name="description"
+      content="Baza wiedzy o programowaniu, w której znajdziesz wszystkie informacje dotyczące najpopularniejszych języków i nie tylko!"
+    />
+    <meta
+      name="keywords"
+      content="programowanie, języki, programiści, html, js, css, baza, biblioteka, SQL, edukacja "
+    />
+    <meta name="author" content="Wiktor Frank" />
+    <!--Open Graph Metadata (og:)-->
+    <meta
+      property="og:title"
+      content="Programowanie - baza wiedzy o HTML, CSS i JS"
+    />
+    <meta
+      property="og:description"
+      content="Dowiedz się wszystkiego o HTML, CSS i JavaScript!"
+    />
+    <meta property="og:image" content="/frontend/assets/icon.png" />
+    <meta property="og:url" content="/frontend/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+
+    <!-- Twitter Card metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Programowanie - baza wiedzy o HTML, CSS i JS"
+    />
+    <meta
+      name="twitter:description"
+      content="Dowiedz się wszystkiego o HTML, CSS i JavaScript!"
+    />
+    <meta name="twitter:image" content="/frontend/assets/icon.png" />
+    <!--Main Website title-->
+    <title>Programowanie</title>
+    <!--Links-->
+    <link rel="icon" href="assets/icon.png" type="image/png" sizes="32x32" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>PROGRAMOWANIE</h1>
+      <h2>HTML-CSS-JS</h2>
+      <section id="menu">
+        <nav id="mainMenu">
+          <h3
+            onclick="mainMenuOptionToggle()"
+            aria-controls="mainMenuOption"
+            aria-expanded="false"
+          >
+            Menu główne
+          </h3>
+          <ul id="mainMenuOption">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </nav>
+        <nav id="subMenu">
+          <h3>Menu dodatkowe</h3>
+          <ul id="subMainMenu">
+            <li>DOCTYPE</li>
+            <li>html</li>
+            <li>
+              Head
+              <ul id="secondSubMenuHead">
+                <li>meta</li>
+                <li>link</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <h2>HTML</h2>
+      <section id="htmlHistoryAndDescription" class="contentSection">
+        <h3>Historia powstania języka HTML oraz ogólny opis jego dziłania</h3>
+        <p>
+          <strong>HTML</strong> (ang. <em>HyperText Markup Language</em>) to
+          <a href="whatAreMarkupLanguage.html">język znaczników</a> służący do
+          tworzenia
+          <a href="whatAreHiperTextDocument.html">dokumentów hipertekstowych</a
+          >. Umożliwia on definiowanie struktury oraz treści stron
+          internetowych, takich jak nagłówki, akapity, odnośniki czy obrazy.
+        </p>
+      </section>
+      <section id="doctypeTag" class="contentSection">
+        <h3><code>&lt;!DOCTYPE html&gt;</code></h3>
+        <p>
+          Deklaracja <code>&lt;!DOCTYPE html&gt;</code> określa wersję języka
+          html z której będziemy korzystać.<br />
+          Obecnie wykorzystywana jest wersja HTML5, natomiast można korzystać
+          również z starszych wersji, między innymi z HTML&nbsp;4.01.
+        </p>
+        <p>
+          Aby użyć HTML5 należy umieścić deklaracje
+          <code>&lt;!DOCTYPE html&gt;</code> na samym początku kodu, przed
+          znacznikiem <code>&lt;html&gt;</code>
+        </p>
+      </section>
+
+      <section id="htmlTagDescription" class="contentSection">
+        <article id="htmlTagDescriptionArticle">
+          <h3><c>&lt;html&gt;</c></h3>
+          <p>
+            <code>&lt;html&gt;</code> jest standardowym znacznikiem w HTML,
+            służącym do zaznaczenia przestrzeni, w której znajduje się kod.
+            <br />
+            Posiada kilka <a href="whatAreAtribute.html">atrybutów</a>.
+          </p>
+          <button
+            onclick="htmlTagAttributesToggle()"
+            aria-controls="htmlTagAttributes"
+            aria-expanded="false"
+          >
+            Wyświetl najważniejsze atrybuty znacznika <code>&lt;html&gt;</code>
+          </button>
+        </article>
+        <section id="htmlTagAttributes">
+          <h4>Atrybuty <code>&lt;html&gt;</code></h4>
+          <article class="attribute">
+            <p>
+              <code>lang =""</code> - jego zadaniem jest zadeklarowanie języka
+              strony np. pl, en, fr. Dzięki takiemu działaniu strona może sama
+              wykryć język i zaproponować użytkownikowi ewentualne
+              przetłumacznie strony.
+            </p>
+          </article>
+          <article class="attribute">
+            <p>
+              <code>dir="…"</code> – ustawia kierunek tekstu. Dostępne wartości:
+            </p>
+            <ul>
+              <li>
+                <code>ltr</code> – tekst od lewej do prawej (left to right)
+              </li>
+              <li>
+                <code>rtl</code> – tekst od prawej do lewej (right to left)
+              </li>
+              <li>
+                <code>auto</code> – przeglądarka automatycznie wykrywa kierunek
+                tekstu na podstawie zawartości
+              </li>
+            </ul>
+          </article>
+          <article class="attribute">
+            <p>
+              <code>dir="…"</code> – ustawia kierunek tekstu. Dostępne wartości:
+            </p>
+            <ul>
+              <li>
+                <code>ltr</code> – tekst od lewej do prawej (left to right)
+              </li>
+              <li>
+                <code>rtl</code> – tekst od prawej do lewej (right to left)
+              </li>
+              <li>
+                <code>auto</code> – przeglądarka automatycznie wykrywa kierunek
+                tekstu na podstawie zawartości
+              </li>
+            </ul>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section id="contact">
+        <p>Dane Kontaktowe:</p>
+        <address id="contactInformation">
+          <p id="phoneNumber">+48 435 358 353</p>
+          <p id="mail">robertjanczak6@gmail.com</p>
+        </address>
+      </section>
+      <section id="socials">
+        <h4>Znajdź mnie</h4>
+        <ul>
+          <li>
+            <div id="gitHubAnchor">
+              <img src="assets/WhiteBorderGithubLogo.webp" alt="Logo GitHub" />
+              <a
+                href="https://github.com/Wiktor-Frank"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile of Wiktor Frank"
+                >GitHub</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="privacyPolicy">
+        <p>&copy; 2025 Wiktor Frank. Wszelkie prawa zastrzeżone.</p>
+        <p>
+          <a href="privacy-policy.html">Polityka prywatności</a>
+        </p>
+      </section>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
