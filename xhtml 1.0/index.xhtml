@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Oficjalna strona o XHTML 1.0</title>
+    
+    <?xml version="1.0" encoding="UTF-8"?>
+    <meta name="copyright" content="© 2000 Wiktor Frank"/>
+    <meta name="Author" content="Wiktor Frank"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" href="icon.png" type="image/png"/>
+    <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+    <!-- Przykładowy komentarz, widać go tylko w kodzie -->
+    <h1><abbr title="HyperText Markup Language + XML">XHTML</abbr>  - Najnowszy oficjalny standard stron internetowych</h1>
+
+    <p>
+        Jeżeli chcesz zobaczyć dokładniejszy opis specyfikacji, kliknij
+      <a href="https://pl.wikipedia.org/wiki/HTML#Wersje_HTML">tutaj</a>.
+    </p>
+
+    <hr/>
+
+    <p>Ta strona została napisana w języku XHTML (2000).<br/>
+    Polączenie HTML z XML.</p>
+
+    <hr/>
+
+    <h2>Wszystkie oficjalne znaczniki w XHTML 1.0</h2>
+    <p> Znaczniki w XHTML zapisuje się, zaczynając od &lt;, następnie nazwa znacznika,
+      a na końcu &gt;. Do niektórych znaczników można dodać też atrybuty, wtedy 
+      zaczyna się od &lt;, potem nazwa znacznika, potem atrybuty i ich wartości
+      np. href="link" itp. a na końcu &gt;.</p>
+
+    <hr/>
+    
+    
+    <h2>&lt;!DOCTYPE&gt;</h2>
+    <p><dfn>&lt;!DOCTYPE&gt;</dfn> - to znacznik deklaracji wersji języka XHTML, który został zachowany od wersji HTML 2.0.</p>
+    <p>Oto, jak należy go wpisać w XHTML 1.0:</p>
+    <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</p>
+    <h2>Znaczniki struktury dokumentu</h2>
+    <h3>Znaczniki HTML 1, które zostały zachowane w XHTML 1.0</h3>
+    <ul>
+        <li> 
+           <dfn>&lt;html&gt;</dfn>  - Otwiera dokument HTML. Wszystko, co widać i to, czego nie widać, musi być w środku. <br/>
+           Atrybuty: <br/>
+           <dfn>lang</dfn> - wybór języka strony (np. pl) <br/>
+           <dfn>dir</dfn> - wybór kierunku tekstu (ltr lub rtl)
+           <br/>
+           W XHTML 1.0 stosuje się: <br/>
+           &lt;head lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;/head&gt;
+           
+
+        </li>
+
+        <li>
+           <dfn>&lt;head&gt;</dfn> - Sekcja nagłówka. Tutaj umieszczamy informacje dla przeglądarki,
+            które użytkownik zobaczy tylko pośrednio.
+        </li>
+
+
+
+        <li>
+            <dfn>&lt;body&gt;</dfn> - ostatni znacznik struktury, odpowiada za zawartość która
+            wyświetla się na stronie, czyli to co widzi użytkownik.
+        </li>
+    </ul>
+
+    <hr/>
+    <h2>Znaczniki głowy (&lt;head&gt;)</h2>
+    <h3>Znaczniki zachowane z HTML 4.01</h3>
+    <ul>
+        <li><dfn>&lt;link&gt;</dfn> - Połączenie HTML z zewnętrznymi zasobami, np. CSS, favicon.</li>
+        <li><dfn>&lt;meta&gt;</dfn> - Metadane dokumentu, wartości wewnętrzne nie pobierane z poza pliku.</li>
+        <li><dfn>&lt;title&gt;</dfn> - Tytuł strony. wyświetlany w pasku przeglądarki lub na liście stron.</li>
+        <li><dfn>&lt;script&gt;</dfn> - skrypt, można dodać i w &lt;body&gt; i w &lt;head&gt;.</li>
+        <li><dfn>&lt;style&gt;</dfn> - Wewnętrzny arkusz stylu.
+        <br/> 
+        Atrybuty style:
+        type - deklaracja typu stylu (np.type="text/css")<br/>
+        media - określa urządzenie dla którego obowiązuje styl.
+    </li>
+        <li><dfn>&lt;base&gt;</dfn> - określa bazowy URL dla linków względnych.</li>
+    </ul>
+
+    <hr/>
+    <h2>Znaczniki ciała (&lt;body&gt;)</h2>
+
+    <h3>Znaczniki struktury ciała (&lt;body&gt;)</h3>
+    <h4>Znaczniki zachowane z HTML 4.01</h4>
+        <ul>
+        <li><dfn>&lt;div&gt;</dfn> - Ogólny kontener, pozwalający grupować elementy, przydatny przy stylowaniu w CSS.</li>
+        <li><dfn>&lt;span&gt;</dfn> - Kontener liniowy, służy do stylizacji fragmentów tekstu za pomocą CSS.</li>
+        
+    </ul>
+    <hr/>
+
+    <h3>Znaczniki nagłówków (zachowane z HTML 1)</h3>
+    <p>
+        Nagłówki od największego (&lt;h1&gt;), do najmniejszego (&lt;h6&gt;).
+    </p>
+    <h1>&lt;h1&gt;</h1>
+    <h2>&lt;h2&gt;</h2>
+    <h3>&lt;h3&gt;</h3>
+    <h4>&lt;h4&gt;</h4>
+    <h5>&lt;h5&gt;</h5>
+    <h6>&lt;h6&gt;</h6>
+
+
+    <hr/>
+    <h3>Akapity, tekst i jego wyróżnienie</h3>
+    <h4>Znaczniki zachowane z HTML 1</h4>
+    <ol>
+        <li>
+            <dfn>&lt;p&gt;</dfn> - Akapit - podstawa każdego dokumentu tekstowego.
+        </li>
+        <li>
+            <dfn>&lt;pre&gt;</dfn> - Tekst preformatowany - zachowuje wszystkie znaki białe (spacje i nowe linie), idealny do kodów i diagramów ASCII.
+        </li>
+        <li><dfn>&lt;address&gt;</dfn> - Informacje o autorze.</li>
+    </ol>
+    <p>Przykładowe użycie &lt;pre&gt; do diagramu ASCII:</p>
+    <pre>
+         ________
+        /       /|
+       /       / |
+      /       /  |
+     |-------|   /
+     |       |  /
+     |       | /
+     |-------|/
+      
+    </pre>
+        <h4>Znaczniki zachowane z HTML 2.0</h4>
+    <ol>
+        <li>
+            <em><dfn>&lt;em&gt;</dfn> - Tekst wyróżniony, zwykle pokazywany w kursywie.</em>
+        </li>
+        <li>
+            <strong><dfn>&lt;strong&gt;</dfn> - Mocniejsze wyróżnienie tekstu, zwykle generowane jako pogrubienie. </strong>
+        </li>
+        <li>
+            <code><dfn>&lt;code&gt;</dfn> - Służy do zaznaczenia fragmentów kodu.</code> 
+        </li>
+        <li>
+            <samp><dfn>&lt;samp&gt;</dfn> - Dane wyjściowe programu (output).</samp>
+        </li>
+        <li>
+            <kbd><dfn>&lt;kbd&gt;</dfn> - Dane wejściowe.</kbd>
+        </li>
+        <li>
+            <var><dfn>&lt;var&gt;</dfn> - zmienna programistyczna lub matematyczna.</var>
+        </li>
+
+
+    </ol>
+    <h4>Znaczniki zachowane z HTMl 4.01</h4>
+    <ul>
+        <li><dfn>&lt;abbr&gt;</dfn> - skrót</li>
+        <li><dfn>&lt;acronym&gt;</dfn> - akronim</li>
+        <li><dfn>&lt;dfn&gt;</dfn> - definicja terminu.</li>
+        <li><dfn>&lt;del&gt;</dfn> - oznaczenie usuniętego tekstu.</li>
+        <li><dfn>&lt;ins&gt;</dfn> - oznaczenie dodanego tekstu.</li>
+    </ul>
+    <hr/>
+
+        <h3>Linie i podziały</h3>
+        <h4>Znaczniki zachowane z HTML 1</h4>
+    <ul>
+        <li>
+            <dfn>&lt;hr&gt;</dfn> - linia pozioma
+
+        </li>
+        <li>
+            <dfn>&lt;br/&gt;</dfn> - przełamanie linii, czyli przeniesienie tekstu za &lt;br/&gt; do następnej linijki.
+        </li>
+    </ul>
+        <hr/>
+    <h3>Linki i hiperłącza</h3>
+    <ol>
+        <li>
+            <dfn>&lt;a&gt;</dfn> - hiperłącze (odnośnik), odnośnik do innej strony. <br/>
+
+            Przykład odnośnik do elementu na stronie: <br/>
+            W jednym miejscu tworzymy element, o atrybucie id="nazwa", w innym miejscu tworzymy &lt;a href="#id"&gt;. <br/>
+            Żeby wszystko działało poprawnie trzeba id i href nadać te same wartości, tyle że w href, należy dodać # na początku (href="#id"). <br/>
+            Przykład odnośnik do elementu poza stroną: <br/>
+            Kopiujemy link wybranej strony i wstawiamy go do atrybutu href. <br/>
+            &lt;a href="link"&gt;
+        </li>
+            
+    </ol>
+    <hr/>
+        <h3>Listy</h3>
+    <ul>
+        <li>
+            <dfn>&lt;ul&gt;</dfn> - Lista wypunktowana (nie uporządkowana)
+        </li>
+    </ul>
+    <hr/>
+    <ol>
+        <li>
+            <dfn>&lt;ol&gt;</dfn> - Lista numerowana (uporządkowana)
+        </li>
+    </ol>
+    <p>
+      Do tych 2 list, do wszystkich ich podpunktów, wykorzystuje się znacznik &lt;li&gt;.
+    </p>
+    <p>
+      <dfn>&lt;li&gt;</dfn> - Element listy uporządkowanej i nieuporządkowanej - każdy z podpunktów
+      w tych listach musi znajdować się w &lt;li&gt;.
+    </p>
+    <br/>
+    <dl>
+        <dt><dfn>&lt;dl&gt;</dfn> - Lista definicji</dt>
+        <dd>
+            Pozwala tworzyć słowniki lub glosariusze.
+        </dd>
+    </dl>
+    <p>
+        Znacznikiem wewnętrznym, listy definicji są &lt;dt&gt; oraz &lt;dd&gt;.
+    </p>
+    <p><dfn>&lt;dt&gt;</dfn> - Termin w liście definicji.</p>
+    <p>
+        <dfn>&lt;dd&gt;</dfn> - Wyjaśnienie terminu w liście definicji.
+    </p>
+    <hr/>
+    <h3>Cytaty i bloki tekstów</h3>
+    <h4>Znaczniki zachowane z HTML 1</h4>
+    <blockquote>
+      <dfn>&lt;blockquote&gt;</dfn> - Cytat blokowy - wyróżnia dłuższe fragmenty cytatów lub
+      tekstów z innych źrodeł.
+    </blockquote>
+    <h4>Znaczniki zachowane z HTML 4.01</h4>
+    <p><dfn>&lt;cite&gt;</dfn> - tytuł lub źródło tekstu cytowanego.</p>
+    <p><dfn>&lt;q&gt;</dfn> - krótkie cytaty liniowe.</p>
+    <p>Przykład:</p>
+    <blockquote>
+      "Ignacego Łukasiewicza znamy jako wynalazcę lampy naftowej. Dzisiaj, kiedy
+      lampa naftowa przeszła do lamusa techniki, ustąpiwszy miejsca doskonalszym
+      sposobom oświetlenia, wynalazek stracił swoją pierwotną rangę. Blask
+      żarówek i świetlówek nie przyćmił jednak samej postaci naszego rodaka,
+      przeciwnie - na tle dzisiejszego stanu techniki jeszcze wyraźniej rysuje
+      się śmiałość jego pomysłów, wielkość jego dzieła, pionierska rola
+      Łukasiewicza w położeniu podwalin pod wielkie przeobrażenia świata,
+      których dzisiaj jesteśmy świadkami."
+    </blockquote>
+    <cite>~ Zbigniew Przyrowski w "Światło z ziemi" z 1973 r.</cite>
+    <hr/>
+    <h3>Obrazy</h3>
+    <h4>Zachowane z HTML 1</h4>
+    <p>Przykład: </p>
+    <img src="gif.gif" alt="przykładowy gif" title="obraz w gif"/>
+    <p>Takiego gifa lub zdjęcie można dodać w taki sposób:</p>
+    <p>&lt;img src="nazwa pliku.rozszerzenie"/&gt; (np. XBM/PPM, gif, png, jpg).</p>
+    <img src="icon.png" alt="ikona.png" title="ikona w png"/>
+    <p>
+        Znacznik &lt;img/&gt; posiada atrybut alt. <br/>
+        <dfn>alt</dfn>, to alternatywny opis obrazu na stronie, jeżeli obraz się nie wczyta alt wyświetli się zamiast niego.
+    </p>
+    <p>Przykład: alt="przykładowy alternatywny opis obrazu".</p>
+    <img src="nieistniejacy plik" alt="Przykładowy alternatywny tekst "/>
+    
+    <h4>Znaczniki zachowane z HTML 4.01</h4>
+    <ul>
+        <li>
+            <dfn>&lt;map&gt;</dfn> - służy do tworzenia map obrazów (hotspotów)
+        </li>
+        <li>
+            <dfn>&lt;area&gt;</dfn> - służy do tworzenia map obrazów (hotspotów)
+        </li>
+    </ul>
+    <hr/>
+    <h3>Formularze i pola formularzy</h3>
+    <h4>Znaczniki formularzy</h4>
+    <h5>Znaczniki zachowane od HTML 2.0</h5>
+    <ol>
+        <li>
+            <dfn>&lt;form&gt;</dfn> - formularz, pozostałe znaczniki formularza muszą się w nim znajdować, aby wszystko działało poprawnie. <br/>
+            Atrybuty: <br/>
+            <dfn>action</dfn> - URL, na który są wysyłane dane formularza. <br/>
+            <dfn>method</dfn> - wybór metody przesyłu (GET lub POST). <br/>
+            
+        </li>
+        <li><dfn>&lt;input/&gt;</dfn> - pole formularza, jego zadanie jest zależne od podanej wartości atrybutu type. <br/>
+            Najważniejszym atrybutem &lt;input/&gt; jest type, mający parę wartości, które są bardzo potrzebne, aby zadeklarować działanie pola. <br/>
+            Wartości type: <br/>
+        </li>
+    </ol>
+            <h5>Zachowane z HTML 2.0</h5>
+            <dl>
+                <dt><dfn>text</dfn></dt>
+                <dd>Jednolinijkowe pole tekstowe.</dd>
+                <dt><dfn>password</dfn></dt>
+                <dd>Jednolinijkowe pole tekstowe, z tą różnicą, że jest przeznaczone na hasło, z tego powodu wartość jest ukryta wizualnie, aby nie mogły jej zobaczyć osoby niepożądane.</dd>
+                <dt><dfn>checkbox</dfn></dt>
+                <dd>Pole wyboru, które może zaznaczyć i odznaczyć. Pozwala na wybór jednej lub wielu opcji.</dd>
+                <dt><dfn>radio</dfn></dt>
+                <dd>Przycisk radiowy, wartość ta wzięła swoją nazwę od odbiorników radiowych, ponieważ korzystając z radia, również idzie wybrać tylko jedną stację na raz, a naciśnięcie jednego przycisku powoduje wyłączenie poprzedniego. <br/>
+            Jak działa? <br/>
+            Jeżeli stworzymy dwa przyciski &lt;input type="radio"/&gt; i nadamy im tego samego name, to będzie można wybrać tylko jeden z nich, a po kliknięciu w drugi pierwszy się wyłączy, oczywiście tak samo działa to po dodaniu większej ilości radio button'ów.</dd>
+                <dt><dfn>submit</dfn></dt>
+                <dd>Przycisk wysyłający formularz, a następnie zostaje wyświetlony wynik przesłany przez serwer.</dd>
+                <dt><dfn>reset</dfn></dt>
+                <dd>Przywraca pola do ich domyślnych wartości.</dd>
+            </dl>
+            <h5>Wartości zachowane z HTML 4.01</h5>
+            <dl>
+                <dt><dfn>hidden</dfn></dt>
+                <dd>ukryte pola formularza.</dd>
+                <dt><dfn>file</dfn></dt>
+                <dd>przesyłanie pliku.</dd>
+                <dt><dfn>image</dfn></dt>
+                <dd>przycisk obrazkowy</dd>
+            </dl>
+            <ol>
+                <li>
+                    Poza type, &lt;input/&gt; ma jeszcze 5 innych atrybutów. <br/>
+                    <dfn>name</dfn> - nazwa pola, umożliwia identyfikację danych z pola (wiadomo gdzie ma zostać skierowana wartość w skrypcie). <br/>
+                    <dfn>value</dfn> - wartość domyślna pola lub w przypadku przycisku jest to napis na nim.<br/>
+                    <dfn>checked</dfn> - dla checkbox/radio, oznacza zaznaczone domyślnie. <br/>
+                    <dfn>maxlength</dfn> - maksymalna liczba znaków.
+                    <dfn>size</dfn> - określa wielkość pola.
+                </li>
+                <li>
+                    &lt;textarea&gt; - wieloliniowe pole tekstowe. <br/>
+                    Atrybuty: <br/>
+                    <dfn>rows</dfn> - liczba wierszy. <br/>
+                    <dfn>cols</dfn> - liczba kolumn.
+
+                </li>
+                <li>
+                    <dfn>&lt;select&gt;</dfn> - Lista rozwijana. <br/>
+                    Atrybuty: <br/>
+                    <dfn>name</dfn> - Nazwa pola, dla identyfikacji. <br/>
+                    <dfn>multiple</dfn> - Możliwość zaznaczenia kilku opcji.
+                </li>
+                <li>
+                    <dfn>&lt;option&gt;</dfn> - element listy select. <br/>
+                    Atrybuty: <br/>
+                    <dfn>disabled</dfn>
+                    <dfn>value</dfn> - Wartość elementu (nazwa, liczba itp.) <br/>
+                    <dfn>selected</dfn> - Czy jest domyślnie wybrany.
+                </li>
+            </ol>
+
+        <h5>Znaczniki zachowane z HTML 4.01</h5>
+
+        <ul>
+            <li><dfn>&lt;fieldset&gt;</dfn> - Pozwala grupować powiązane pola formularza.</li>
+            <li><dfn>&lt;legend&gt;</dfn> - tytuł grupy &lt;fieldset&gt;.</li>
+            <li><dfn>&lt;label&gt;</dfn> - etykieta dla pól formularza, poprawia dostępność i obsługę kliknięć.</li>
+            <li><dfn>&lt;optgroup&gt;</dfn> - grupowanie opcji w &lt;select&gt;.
+                <br/>
+                Atrybuty: <br/>
+                <dfn>disabled</dfn>
+            </li>
+            <li><dfn>&lt;button&gt;</dfn> - bardziej elastyczny przycisk.</li>
+        </ul>
+
+
+
+    <hr/>
+    <h4>Przykładowy formularz</h4>
+    <p><strong>NIE PODAWAJ PRAWDZIWYCH DANYCH W INTERNECIE, JEŻELI NIE JEST TO KONIECZNE, MOŻE TO GROZIĆ ICH WYKRADNIĘCIEM!</strong></p>
+        <form action="" method="post">
+
+            <fieldset id="inputs">
+                <legend>Inputy</legend>
+            <input type="text" value="przykładowa domyślna wartość" name="text"/>
+            <label for="password">Hasło</label>
+            <input type="password" maxlength="10" name="password" id="password"/>
+          
+            <input type="checkbox" name="checkbox" checked="checked" value="Przykładowy checkbox"/>
+
+            <input type="radio" value="radio button 1" name="radio"/>
+            <input type="radio" value="radio button 2" name="radio"/>
+
+            <input type="submit" value="Prześlij" name="submit"/>
+
+            <input type="reset" value="Resetuj" name="reset"/>
+            </fieldset>
+
+            <select name="select" multiple="multiple">
+
+                <optgroup label="liczby">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </optgroup>
+
+
+                <optgroup label="wyrazy">
+                    <option value="wybor">wybór</option>
+                    <option value="opcja">opcja</option>
+                </optgroup>
+                                
+            </select>
+
+            
+
+            <textarea name="textarea">Tutaj znacznik textarea, wpisz tekst.</textarea>
+            <button>Button</button>
+
+
+
+    </form>
+    <hr/>
+       <h4>Tabele</h4>
+       <h5>Znaczniki zachowane z HTML 3.2</h5>
+            <ol>
+                <li><dfn>&lt;table&gt;</dfn> - znacznik ogólny tabeli, w nim pisze się wszystkie znaczniki w tabeli
+                    <br/>
+
+                    
+                </li>
+                <li><dfn>&lt;tr&gt;</dfn> - wiersz tabeli <br/>
+                Atrybuty: <br/>
+                    
+                
+
+
+                </li>
+                <li><dfn>&lt;td&gt;</dfn> - komórka danych tabeli <br/>
+                Atrybuty: <br/>
+                    
+
+                <dfn>colspan</dfn> - łączenie komórek poziomo (kolumnami) <br/>
+                <dfn>rowspan</dfn> - łączenie komórek pionowo (wierszami)
+            
+            </li>
+                <li><dfn>&lt;th&gt;</dfn> - komórka nagłówkowa tabeli <br/>
+                Atrybuty: <br/>
+                    
+
+                <dfn>colspan</dfn> - łączenie komórek poziomo (kolumnami) <br/>
+                <dfn>rowspan</dfn> - łączenie komórek pionowo (wierszami)</li>
+            </ol>
+        <h5>Znaczniki zachowane z HTML 4.01</h5>
+            <ul>
+                <li><dfn>&lt;caption&gt;</dfn> - tytuł tabeli.</li>
+                <li><dfn>&lt;thead&gt;</dfn>, <dfn>&lt;tfoot&gt;</dfn>, <dfn>&lt;tbody&gt;</dfn> - semantyczne oznaczanie fragmentów tabeli</li>
+                <li><dfn>&lt;col/&gt;</dfn>, <dfn>&lt;colgroup&gt;</dfn> - tworzenie logicznej grupy kolumn w tabeli, żeby ustawić wspólne wartości kolumn.</li>
+            </ul>
+
+            <p>Przykład:</p>
+            <table>
+                <colgroup>
+                    <col span="1" class="kolumna1"/>
+                    <col span="1" class="kolumna2"/>
+                    <col span="1" class="kolumna3"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>&lt;th&gt; - nagłówek(thead)</th>
+                        <th colspan="4">&lt;th&gt; - nagłówek (colspan 4)(thead)</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>&lt;td&gt; - komórka (tfoot)</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+
+                        <td rowspan="3">&lt;td&gt; - komórka (rowspan 3)(tbody)</td>
+                        <td rowspan="3">&lt;td&gt; - komórka (rowspan 3)(tbody)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt; - komórka(tbody)</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt; - komórka(tbody)</td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
+    <hr/>
+        <h4>Skrypty</h4>
+    <p><dfn>&lt;script&gt;</dfn> - Umożliwia pisanie lub podłączanie zewnętrznych skryptów, czyli funkcji programu (najczęściej JavaScript).</p>
+    <h5>Przykład w pliku zewnętrznym</h5>
+    <script type="text/javascript" src="helloWorld.js"></script>
+    <h5>Przykład w wewnątrz XHTML</h5>
+    <script type="text/javascript">
+    //<![CDATA[
+    function helloWorld(){alert('Hello World!');}
+    //]]>
+    </script>
+    <code>function helloWorld(){alert('Hello World!');}</code>
+    <a href="">Więcej o skryptach znajdziesz tutaj</a>
+
+    <hr/>
+
+    <h4>Multimedia</h4>
+    <ul>
+        <li><dfn>&lt;object&gt;</dfn> - Służy do zamieszczania treści multimedialnych.</li>
+        <li><dfn>&lt;param&gt;</dfn> - parametr dla object.</li>
+        <li><dfn>&lt;iframe&gt;</dfn> - Umieszczanie innej strony wewnątrz okienka na stronie. <br/>
+        (<strong>UWAGA! Może powodować problemy z dostępnością.</strong>)</li>
+    </ul>
+    <hr/>
+    <h4>Nowe atrybuty OGÓLNE</h4>
+    <p>Pozostały atrybuty ogólne z HTML 4.01, które można zastosować do prawie każdego elementu strony m.in:
+    </p>
+    <ul>
+        <li>id - identyfikator elementu, każdy musi być indywidualny. Pozwala na przypisywanie elementom właściwości (np. stylu).</li>
+        <li>class - klasa wspólna elementów, można nadać ją kilku elementom jednocześnie i przypisać im te same właściwości (np.styl). </li>
+        <li>style - pozwala przypisać styl bezpośrednio do elementu w XHTML.</li>
+        <li>title - tekst wyświetlający się po najechaniu na element.</li>
+        <li><dfn>lang</dfn> - wybór języka strony (np. pl) <br/></li>
+        <li><dfn>dir</dfn> - wybór kierunku tekstu (ltr lub rtl)</li>
+    </ul>
+    <p>lang i dir mogą być stosowane do większości znaczników, przydaje się to w przypadku kiedy chcemy zacytować tekst w innym języku.</p>
+    <hr/>
+    <address>
+        Autor: Wiktor Frank<br/>
+        Email: wiktorfrank09@gmail.com
+    </address>
+    <h4>Wycofane znaczniki</h4>
+    <h5>HTML 1 i 2</h5>
+    <p>&lt;xmp&gt; - niepraktyczny</p>
+    <p>&lt;plaintext&gt; - niepraktyczny</p>
+    <h5>HTML 3.2 i 4.0</h5>
+    <p>&lt;font&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;center&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;u&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;basefont&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;strike&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;s&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;big&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;small&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;tt&gt; - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>&lt;applet&gt; - zastąpiony przez &lt;object&gt; lub &lt;embed&gt;.</p>
+    <p>&lt;dir&gt; - przez podobne działanie zastąpiony &lt;ul&gt; i &lt;ol&gt;.</p>
+    <p>&lt;isindex&gt; - usunięty całkowicie ze względu na nieoptymalne działanie.</p>
+    <p>&lt;menu&gt; - przez podobne działanie zastąpiony &lt;ul&gt; i &lt;ol&gt;.</p>
+    <hr/>
+    <p>Niezalecane znaczniki</p>
+    <p>Znaczniki typu frames - powodują problemy z nawigacją i dostępnością</p>
+    <p>&lt;listing&gt; - lepiej używać &lt;pre&gt;.</p>
+    <p>&lt;i&gt; - zaleca się zastąpić &lt;em&gt; lub &lt;strong&gt;</p>
+    <p>&lt;b&gt; - zaleca się zastąpić &lt;em&gt; lub &lt;strong&gt;</p>
+
+    <hr/>
+
+    <h4>Wycofane atrybuty</h4>
+    <p>bgcolor - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>text - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>link - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>vlink - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>alink - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>bordercolor - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>cellpadding - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>cellspacing - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>width - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>height - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>align - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>border - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>hspace - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>vspace - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>size - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>color - uznany za przestarzały i zastąpiony CSS.</p>
+    <p>valign - uznany za przestarzały i zastąpiony CSS.</p>
+
+
+
+</body>
+</html>
+
+    

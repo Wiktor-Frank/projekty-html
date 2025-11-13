@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.kolumna1{
+    background-color: red;
+}
+.kolumna2{
+    background-color: blue;
+}
+.kolumna3{background-color: green;}
