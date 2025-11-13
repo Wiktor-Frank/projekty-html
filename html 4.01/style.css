@@ -1,0 +1,46 @@
+body{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    width: 800px;
+    margin-left: 25%;
+    font-weight: 300;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+ol{
+    list-style-position: inside;
+}
+
+pre{
+    text-align: left;
+}
+
+address{
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+dd{
+    list-style-position: inside;
+}
+
+.kolumna1{
+    background-color: red;
+}
+.kolumna2{
+    background-color: blue;
+}
+.kolumna3{background-color: green;}
