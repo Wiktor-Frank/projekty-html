@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl">
+      <head>
+         <title>Oficjalna strona o CSS level 1</title>
+         
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <meta name="copyright" content="© 1998 Wiktor Frank">
+         <meta name="Author" content="Wiktor Frank">
+         <link rel="stylesheet" href="style.css" type="text/css">
+         <link rel="icon" href="icon.png" type="image/png">
+
+
+      </head>
+      
+      <body>
+         <div id="przykladPozycjonowaniaFixed">Przykład pozycjonowania fixed</div>
+         <h1>Strona o CSS level 2 - 1998 r.</h1>
+         <p>Arkusze stylów posiadają teraz więcej opcjii!</p>
+         <h2>Opcje zachowane z CSS level 1</h2>
+         <h3>Podstawowa składnia w CSS level 1</h3>
+         <pre>
+            selector{
+               właściwość: wartość;
+            }
+         </pre>
+         <p>Przykład:</p>
+         <pre>
+            <code>
+            body{
+               color: blue;
+            }
+            </code>
+         </pre>
+         <p>W tym przykładzie ustawiam kolor napisów na niebieski.</p>
+         <h3>Typy selektorów W CSS level 2</h3>
+         <ol>
+            <li><dfn>Selektory typu</dfn> - odnoszą się do elementów języka HTML, np. &lt;body&gt;.</li>
+            <li><dfn>Selektory klasy</dfn> - odnoszą się do elementów z atrybutem class, o konkretnej wartości.</li>
+            <li><dfn>Selektory identyfikatora (id)</dfn> - odnoszą się do elementów z atrybutem id, o podanej wartości.</li>
+            <li>Selektory grupowe - kilka selektorów jednocześnie.</li>
+            <li><dfn>Selektory potomków</dfn> - odnoszą się do wybranych elementów, wewnątrz innych elementów.</li>
+            <li>Selektor ogólny (*) - odnosi się do wszytskich elementów</li>
+         </ol>
+         <p>Przykłady:</p>
+         <p>Selektor typu</p>
+         <pre>
+            <code>
+               body{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor klasy</p>
+         <pre>
+            <code>
+               .klasa1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor identyfikatora</p>
+         <pre>
+            <code>
+               #id1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor grupowy</p>
+         <pre>
+            <code>
+               .klasa1, #id1, body{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor potomka</p>
+         <pre>
+            <code>
+               .klasa1 h1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <hr>
+         <h3>Właściwości tekstu</h3>
+         <ul>
+            <li id="kolorTekstu"><dfn>color</dfn> - ustawienie koloru tekstu.</li>
+            <li id="rodzinaCzcionki"><dfn>font-family</dfn> - wybór rodziny czcionek (np. Arial, Verdana, serif).</li>
+            <li id="rozmiarCzcionki"><dfn>font-size</dfn> - rozmiar tekstu, wyrażany w pikselach, procentach (np. 12px, 80%) lub słownie, xx-small (bardzo mały), x-small (mały), small (lekko mniejszy niż normalny), medium (domyślny), large (trochę większy niż normalny), x-large (duży) i xx-large (bardzo duży).</li>
+            <li id="stylCzcionki"><dfn>font-style</dfn> - styl tekstu, np. pochylony, do jego wartości należą normal, italic i oblique. </li>
+            <li id="gruboscCzcionki"><dfn>font-weight</dfn> - grubość tekstu, do wyboru normal, bold, bolder i lighter lub wyrażona w wartościach numerycznych.</li>
+            <li id="polozenieTekstu"><dfn>text-align</dfn> - położenie tekstu, do wyboru left(po lewej), right(po prawej), center(na środku) i justify (rozłożenie po całej szerokości).</li>
+            <li id="dekoracjaTekstu"><dfn>text-decoration</dfn> - ozdobienie tekstu, do wartości należą none (żadne), underline (podkreślenie), overline(nadkreślenie), line-through (przekreślenie).</li>
+            <li id="odlLitery"><dfn>letter-spacing</dfn> - przestrzeń między literami.</li>
+            <li id="odlWyrazy"><dfn>word-spacing</dfn> - przestrzeń między słowami.</li>
+            <li id="polozenieWPionie"><dfn>vertical-align</dfn> - wyrównanie w pionie, do jego wartości należą top(góra), middle(środek), bottom (dół) i domyślne baseline. <br>
+                (Działa tylko dla elementów liniowych, a nie blokowych.)</li>
+
+         </ul>
+         <hr>
+         <h3>Kolory i tła</h3>
+         <ul>
+            <li id="kolorTla"><dfn>background-color</dfn> - kolor tła</li>
+            <li id="obrazTla"><dfn>background-image</dfn> - obraz tła (np. background-image: url("tlo.jpg");)</li>
+            <li id="powtorzenieTla"><dfn>background-repeat</dfn> - rozciąganie zdjęcia jako tła elementu, jego wartości to repeat (powtarzanie w obu kierunkach), repeat-x (powtarza tylko poziomo), repeat-y (powtarza tylko pionowo), no-repeat (Wyświetlany tylko raz). </li>
+            <li id="polozenieTla"><dfn>background-position</dfn> - pozycja tła, do jego wartości należą top (góra), bottom (dół), left (lewo), right (prawo), center (środek). <br>
+            Maksymalnie przyjmuje dwie wartości, jedną w pionie i jedną w poziomie.</li>
+         </ul>
+         <hr>
+
+         <p>Obramowania te można ustawiać dla każdej strony inne wystarczy tylko, że między border, a właściwość (np. style, width) wstawicie kierunek, top, left, bottom lub right.</p>
+         </div>
+         <hr>
+                  <h3>Listy</h3>
+         <ul>
+            <li><dfn>list-style-type</dfn> - typ podpunktora, wartości to disc, circle, square, decimal, upper-roman, lower-roman.</li>
+            <li><dfn>list-style-image</dfn> - obrazek jako podpunktor (np. list-style-image: url("podpunktor.jpg");)</li>
+            <li><dfn>list-style-position</dfn> - położenie podpunktów, inside lub outside.</li>
+         </ul>
+         <p>Przykład:</p>
+         <ul id="podpunktoryPodstwawowe">
+            <li>list-style-type</li>
+         </ul>
+         <ul id="podpunktoryZdjecie">
+            <li>list-style-image, list-style-position</li>
+         </ul>
+         <hr>
+         <h3>Marginesy, wypełnienia i rozmiary</h3>
+         <ul>
+            <li id="margines"><dfn>margin</dfn> - wielkość marginesu.</li>
+            <li id="wypelnienie"><dfn>padding</dfn> - wielkość wypełnienia (miejsce między krawędzią a treścią).</li>
+            <li id="szerokosc"><dfn>width</dfn> - szerokość.</li>
+            <li id="wysokosc"><dfn>height</dfn> - wysokość.</li>
+         </ul>
+         <p>Dla padding i margin można ustawiać dla każdej strony inne wartości wystarczy tylko, że po padding/margin damy -kierunek (np. -top, -bottom, -left, -right).</p>
+         <hr>
+
+         <h2>Nowość w CSS level 2</h2>
+         <p>Padding, margin, widht i height mogą mieć teraz wartość auto, czyli automatyczne ustawienie.</p>
+
+         <h3>Media types</h3>
+         <p>Umożliwia stosowanie różnych styli, dla różnych ekranów.</p>
+         <ol>
+            <li><dfn>@media all</dfn> - Zastosowanie dla wszystkich ekranów (domyślnie).</li>
+            <li><dfn>@media aural</dfn> - Zastosowanie dla czytników ekranu.</li>
+            <li><dfn>@media braille</dfn> - Zastosowanie dla urządzeń brajlowskich.</li>
+            <li><dfn>@media embossed</dfn> - Zastosowanie dla drukarek brajlowskich.</li>
+            <li><dfn>@media handheld</dfn> - Zastosowanie dla urządzeń przenośnych.</li>
+            <li><dfn>@media print</dfn> - Zastosowanie dla drukarek.</li>
+            <li><dfn>@media projection</dfn> - Zastosowanie dla projektorów lub slajdów.</li>
+            <li><dfn>@media screen</dfn> - Zastosowanie dla ekranów komputerów i monitorów.</li>
+            <li><dfn>@media tty</dfn> - Zastosowanie dla terminali znakowych.</li>
+            <li><dfn>@media tv</dfn> - Zastosowanie dla telewizorów i podobnych wyświetlaczy.</li>
+         </ol>
+         <hr>
+         <h3>Pozycjonowanie elementów</h3>
+         <p>Wprowadzono opcje position</p>
+         <ul>
+            <li><dfn>static</dfn> - (domyślna) element układa się standardowo w dokumencie ignorując właściwości top, right, left i bottom.</li>
+            <li><dfn>relative</dfn> - element przesuwa się względem swojego domyślnego położenia, biorąc pod uwage właściowści top, left, bottom i right.</li>
+            <li><dfn>absolute</dfn> - usuwa się z przpływu dokumentu, więc nie koliduje z innymi elementami, jest ustawiany względem swojego porzodka na podstawie właściwości top, left, bottom i right.</li>
+            <li><dfn>fixed</dfn> - pozycjonowanie względem okna przeglądarki, ignoruje przodków i nie przesuwa się przy scrollowaniu.</li>
+         </ul>
+         <p>Przykład użycia:</p>
+         <div id="przykladPosition">
+         <div id="przykladPozycjonowaniaStatic">static</div>
+         <div id="przykladPozycjonowaniaRelative">relative</div>
+         <div id="przykladPozycjonowaniaAbsolute">absolute</div>
+         </div>
+         <hr>
+         <div id="ramka">
+         <h3>Ramki</h3>
+         <p>W CSS level 2, uproszczona ramki.</p>
+         <p>Zamiast pisać je w trzech osobnych opcjach, zapisuje się je w jednej.</p>
+         <code>boder: wielkość (np.2px) typ(np.solid) kolor(np. black)</code>
+         </div>
+         <hr>
+         <h3>max/min wigth/height</h3>
+         <p>CSS level 2 wprowadza możliwość nadania maxymalnej wielkości elementu. Co to oznacza?</p>
+         <p>Jeżeli przypiszemy jakiemuś elementowi width np. 100%, bo chcemy żeby był jak najbardziej zbliżony do tej wartości, ale jednoczesnie chcemy żeby nie przekraczał jakiejswartości, używamy max.</p>
+         <p>właściwości typu min/max mamy cztery:</p>
+         <ol>
+            <li><dfn>min-wigth</dfn> - minimalna szerokość.</li>
+            <li><dfn>max-wigth</dfn> - maksymalna szerokość.</li>
+            <li><dfn>min-height</dfn> - minimalna wysokość.</li>
+            <li><dfn>max-height</dfn> - maksymalna wysokość.</li>
+         </ol>
+         <hr>
+         <h3>Pseudo-elementy</h3>
+         <p>CSS level 2 wprowadza pseudo-elementy, czyli elementy, które nie istnieja w html, ale css wyświetla je, służy do dodawania elementw dekoracyjnych</p>
+         <p>Do pseudo-elementów należą:</p>
+         <ul>
+            <li id="poBefore"><dfn>:before</dfn> - tworzy element przed wybranym elementem.</li>
+            <li id="przedAfter"><dfn>:after</dfn> - tworzy element za wybranym elementem.</li>
+         </ul>
+         <p>Ich uzycie wygląda tak:</p>
+         <code>element :before{
+               Właściowości
+            }</code>
+         <p>lub</p>
+         <code>element :after{
+               Właściwości
+            }</code>
+         <hr>
+         <h3>Kontrola zawartości</h3>
+         <p>CSS level 2 wprowadza możliwość dezycodowania co dzieje się z treścią gdy nie mieście się.</p>
+         <p>Aby to ustawić używamy:</p>
+         <p><dfn>Overflow</dfn> - Określa co dzieje się z zawartością, gdy nie mieści się w boxie.</p>
+         <p>Do jego wartości należą:</p>
+         <div id="ogranicznieMiejsca">
+         <ul>
+            <li><dfn>visible</dfn> - (domyślny) zawartość nie jest przycinana, ani przewijana, jest poprostu widoczna poza granicami elementu nadrzędnego.</li>
+            <li><dfn>hidden</dfn> - wystająca zawartość, zostaje ukryta, nie można jej zobaczyć.</li>
+            <li><dfn>scroll</dfn> - zawartość ma zawsze widoczne paski przwijania (pionowei/lub poziome).</li>
+            <li><dfn>auto</dfn> - paski przewijania pojawiają się tylko gdy zawartość nie mieści się w boxie.</li>
+         </ul>
+         </div>
+         <hr>
+         <h2>Priorytet stylów</h2>
+         <ol>
+            <li>styl jako bezpośredni atrybut znacznika.</li>
+            <li>styl z arkusza.</li>
+            <li>styl dziedziczony</li>
+         </ol>
+         <hr>
+         <p>Przykładowy kod CSS:</p>
+         <pre>
+         <code>
+            @media screen {
+    
+
+               body{
+                  background-color: black;
+                  color: white;
+                  width: auto;
+                  
+               }
+
+               #kolorTekstu{
+                  color: #ff00ff;
+                  background-color: black;
+               }
+
+               #rodzinaCzcionki{
+               font-family: Arial, Helvetica, sans-serif;
+               }
+
+               #rozmiarCzcionki{
+                  font-size: 12px;
+               }
+
+
+               #stylCzcionki{
+                  font-style: italic;
+               }
+
+               #gruboscCzcionki{
+                  font-weight: bold;
+
+               }
+
+               #polozenieTekstu{
+                  text-align: center;
+               }
+
+               #dekoracjaTekstu{
+                  text-decoration:overline;
+               }
+
+               #odlLitery{
+                  letter-spacing: 5px;
+               }
+
+               #odlWyrazy{
+                  word-spacing: 10px;
+
+               }
+
+               #ramka{
+               border: 2px solid white;
+               padding: 10px;
+               }
+
+               #polozenieWPionie{
+                  vertical-align: bottom;
+               }
+
+               #kolorTla{
+                  background-color: aqua;
+                  color: black;
+               }
+               #obrazTla{
+                  background-image: url("tlo.png");
+               }
+               #powtorzenieTla{
+                  background-image: url("tlo.png");
+                  background-repeat: repeat-x;
+               }
+               #polozenieTla{
+                  background-image: url("tlo.png");
+                  background-position: top left;
+               }
+
+
+
+               #margines{
+                  margin: auto;
+               }
+
+               #wypelnienie{
+                  padding: auto;
+               }
+
+               #szerokosc{
+                  width: 400px;
+                  height: auto;
+                  background-color: blue;
+               }
+
+               #wysokosc{
+                  height: 400px;
+                  width: auto;
+                  background-color: red ;
+               }
+
+               #podpunktoryPodstwawowe{
+               list-style-type: square;
+               list-style-position: outside;
+               }
+
+               #podpunktoryZdjecie{
+               list-style-image: url("podpunktor.png");
+               list-style-position: inside;
+               }
+
+               #przykladPozycjonowaniaFixed{
+                  position:fixed;
+                  background-color: black;
+                  width: 100%;
+                  height: 20px;
+                  text-align: center;
+               }
+               #przykladPozycjonowaniaStatic{
+                  position:static;
+                  background-color: blue;
+                  width: 200px;
+                  height: 200px;
+                  text-align: center;
+                  top: 5px;
+                  left: 2px;
+               }
+               #przykladPozycjonowaniaRelative{
+                  position:relative;
+                  background-color: green;
+                  width: 200px;
+                  height: 200px;
+                  text-align: center;
+                  top: 10px;
+                  left: 12px;
+               }
+               #przykladPozycjonowaniaAbsolute{
+                  position:absolute;
+                  background-color: red;
+                  width: 200px;
+                  height: 200px;
+                  text-align: center;
+                  top: 3400px;
+                  left: 300px;
+               }
+
+               #przykladPosition{
+                  width: 200px;
+                  height: 700px;
+               }
+
+               #poBefore:before{
+                  content: "♠♠♠♠♠♠♠♠♠♠♠♠♠";
+                  color: red;
+               }
+
+               #przedAfter:after{
+                  content: "♠♠♠♠♠♠♠♠♠♠♠♠♠";
+                  color: white;
+               }
+
+               #ogranicznieMiejsca{
+                  height: 100px;
+                  width: 400px;
+                  overflow: auto;
+               }
+               }
+
+            @media tv {
+                  
+               #kolorTekstu{
+                  color: yellow;
+                  background-color: black;
+               }
+
+               #dekoracjaTekstu{
+                  text-decoration:none;
+               }
+
+               #obrazTla{
+                  background-image: none;
+               }
+               #powtorzenieTla{
+                  background-image: none;
+                  
+               }
+               #polozenieTla{
+                  background-image: none;
+                  
+               }
+
+               #podpunktoryZdjecie{
+               list-style-image: none;
+
+               }
+
+
+
+            }
+
+
+         </code>
+         </pre>
+         <hr>
+         <address>
+            Autor: Wiktor Frank<br>
+            Email: wiktorfrank09@gmail.com
+         </address>
+      </body>
+   </html>

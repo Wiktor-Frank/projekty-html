@@ -1,0 +1,196 @@
+@media screen {
+    
+
+body{
+    background-color: black;
+    color: white;
+    width: auto;
+    
+}
+
+#kolorTekstu{
+    color: #ff00ff;
+    background-color: black;
+}
+
+#rodzinaCzcionki{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#rozmiarCzcionki{
+    font-size: 12px;
+}
+
+
+#stylCzcionki{
+    font-style: italic;
+}
+
+#gruboscCzcionki{
+    font-weight: bold;
+
+}
+
+#polozenieTekstu{
+    text-align: center;
+}
+
+#dekoracjaTekstu{
+    text-decoration:overline;
+}
+
+#odlLitery{
+    letter-spacing: 5px;
+}
+
+#odlWyrazy{
+    word-spacing: 10px;
+
+}
+
+#ramka{
+border: 2px solid white;
+padding: 10px;
+}
+
+#polozenieWPionie{
+    vertical-align: bottom;
+}
+
+#kolorTla{
+    background-color: aqua;
+    color: black;
+}
+#obrazTla{
+    background-image: url("tlo.png");
+}
+#powtorzenieTla{
+    background-image: url("tlo.png");
+    background-repeat: repeat-x;
+}
+#polozenieTla{
+    background-image: url("tlo.png");
+    background-position: top left;
+}
+
+
+
+#margines{
+    margin: auto;
+}
+
+#wypelnienie{
+    padding: auto;
+}
+
+#szerokosc{
+    width: 400px;
+    height: auto;
+    background-color: blue;
+}
+
+#wysokosc{
+    height: 400px;
+    width: auto;
+    background-color: red ;
+}
+
+#podpunktoryPodstwawowe{
+list-style-type: square;
+list-style-position: outside;
+}
+
+#podpunktoryZdjecie{
+list-style-image: url("podpunktor.png");
+list-style-position: inside;
+}
+
+#przykladPozycjonowaniaFixed{
+    position:fixed;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+#przykladPozycjonowaniaStatic{
+    position:static;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    top: 5px;
+    left: 2px;
+}
+#przykladPozycjonowaniaRelative{
+    position:relative;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    top: 10px;
+    left: 12px;
+}
+#przykladPozycjonowaniaAbsolute{
+    position:absolute;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    top: 3400px;
+    left: 300px;
+}
+
+#przykladPosition{
+    width: 200px;
+    height: 700px;
+}
+
+#poBefore:before{
+    content: "♠♠♠♠♠♠♠♠♠♠♠♠♠";
+    color: red;
+}
+
+#przedAfter:after{
+    content: "♠♠♠♠♠♠♠♠♠♠♠♠♠";
+    color: white;
+}
+
+#ogranicznieMiejsca{
+    height: 100px;
+    width: 400px;
+    overflow: auto;
+}
+}
+
+@media tv {
+    
+#kolorTekstu{
+    color: yellow;
+    background-color: black;
+}
+
+#dekoracjaTekstu{
+    text-decoration:none;
+}
+
+#obrazTla{
+    background-image: none;
+}
+#powtorzenieTla{
+    background-image: none;
+    
+}
+#polozenieTla{
+    background-image: none;
+    
+}
+
+#podpunktoryZdjecie{
+list-style-image: none;
+
+}
+
+
+
+}
+
