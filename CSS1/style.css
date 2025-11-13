@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+    color: white;
+    width: 800px;
+}
+
+#kolorTekstu{
+    color: #ff00ff;
+    background-color: black;
+}
+
+#rodzinaCzcionki{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#rozmiarCzcionki{
+    font-size: 12px;
+}
+
+
+#stylCzcionki{
+    font-style: italic;
+}
+
+#gruboscCzcionki{
+    font-weight: bold;
+
+}
+
+#polozenieTekstu{
+    text-align: center;
+}
+
+#dekoracjaTekstu{
+    text-decoration:overline;
+}
+
+#odlLitery{
+    letter-spacing: 5px;
+}
+
+#odlWyrazy{
+    word-spacing: 10px;
+
+}
+
+#polozenieWPionie{
+    vertical-align: bottom;
+}
+
+#kolorTla{
+    background-color: aqua;
+    color: black;
+}
+#obrazTla{
+    background-image: url("tlo.png");
+}
+#powtorzenieTla{
+    background-image: url("tlo.png");
+    background-repeat: repeat-x;
+}
+#polozenieTla{
+    background-image: url("tlo.png");
+    background-position: top left;
+}
+
+#ramka{
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: red;
+
+    border-left-width: 4px;
+    border-left-style: dashed;
+    border-left-color: yellow;
+
+
+    border-right-style: none;
+
+
+    border-bottom-width: 9px;
+    border-bottom-style:double;
+    border-bottom-color: green;
+}
+
+#margines{
+    margin: 10px;
+}
+
+#wypelnienie{
+    padding: 8px;
+}
+
+#szerokosc{
+    width: 400px;
+}
+
+#wysokosc{
+    height: 10px;
+}
+
+#podpunktoryPodstwawowe{
+list-style-type: square;
+list-style-position: outside;
+}
+
+#podpunktoryZdjecie{
+list-style-image: url("podpunktor.png");
+list-style-position: inside;
+}

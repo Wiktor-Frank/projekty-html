@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl">
+      <head>
+         <title>Oficjalna strona o CSS level 1</title>
+         
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+         <meta name="copyright" content="© 1997 Wiktor Frank">
+         <meta name="Author" content="Wiktor Frank">
+         <link rel="stylesheet" href="style.css" type="text/css">
+         <link rel="icon" href="icon.png" type="image/png">
+
+
+      </head>
+      <body>
+         <h1>Strona o CSS level 1 - 1997 r.</h1>
+         <p>Od teraz styl strony można oddzielić od jej treści, dzięki kaskadowym arkuszom stylów.</p>
+         <p>Takie działanie zapewnia przejrzystość kodu zarówno treści, ale i stylu.</p>
+
+         <h2>Podstawowa składnia w CSS level 1</h2>
+         <pre>
+            selector{
+               właściwość: wartość;
+            }
+         </pre>
+         <p>Przykład:</p>
+         <pre>
+            <code>
+            body{
+               color: blue;
+            }
+            </code>
+         </pre>
+         <p>W tym przykładzie ustawiam kolor napisów na niebieski.</p>
+         <h2>Typy selektorów W CSS level 1</h2>
+         <ol>
+            <li><dfn>Selektory typu</dfn> - odnoszą się do elementów języka HTML, np. &lt;body&gt;.</li>
+            <li><dfn>Selektory klasy</dfn> - odnoszą się do elementów z atrybutem class, o konkretnej wartości.</li>
+            <li><dfn>Selektory identyfikatora (id)</dfn> - odnoszą się do elementów z atrybutem id, o podanej wartości.</li>
+            <li>Selektory grupowe - kilka selektorów jednocześnie.</li>
+            <li><dfn>Selektory potomków</dfn> - odnoszą się do wybranych elementów, wewnątrz innych elementów.</li>
+         </ol>
+         <p>Przykłady:</p>
+         <p>Selektor typu</p>
+         <pre>
+            <code>
+               body{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor klasy</p>
+         <pre>
+            <code>
+               .klasa1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor identyfikatora</p>
+         <pre>
+            <code>
+               #id1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor grupowy</p>
+         <pre>
+            <code>
+               .klasa1, #id1, body{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <p>Selektor potomka</p>
+         <pre>
+            <code>
+               .klasa1 h1{
+                  color: blue;
+               }
+            </code>
+         </pre>
+         <hr>
+         <h2>Właściwości tekstu</h2>
+         <ul>
+            <li id="kolorTekstu"><dfn>color</dfn> - ustawienie koloru tekstu.</li>
+            <li id="rodzinaCzcionki"><dfn>font-family</dfn> - wybór rodziny czcionek (np. Arial, Verdana, serif).</li>
+            <li id="rozmiarCzcionki"><dfn>font-size</dfn> - rozmiar tekstu, wyrażany w pikselach, procentach (np. 12px, 80%) lub słownie, xx-small (bardzo mały), x-small (mały), small (lekko mniejszy niż normalny), medium (domyślny), large (trochę większy niż normalny), x-large (duży) i xx-large (bardzo duży).</li>
+            <li id="stylCzcionki"><dfn>font-style</dfn> - styl tekstu, np. pochylony, do jego wartości należą normal, italic i oblique. </li>
+            <li id="gruboscCzcionki"><dfn>font-weight</dfn> - grubość tekstu, do wyboru normal, bold, bolder i lighter lub wyrażona w wartościach numerycznych.</li>
+            <li id="polozenieTekstu"><dfn>text-align</dfn> - położenie tekstu, do wyboru left(po lewej), right(po prawej), center(na środku) i justify (rozłożenie po całej szerokości).</li>
+            <li id="dekoracjaTekstu"><dfn>text-decoration</dfn> - ozdobienie tekstu, do wartości należą none (żadne), underline (podkreślenie), overline(nadkreślenie), line-through (przekreślenie).</li>
+            <li id="odlLitery"><dfn>letter-spacing</dfn> - przestrzeń między literami.</li>
+            <li id="odlWyrazy"><dfn>word-spacing</dfn> - przestrzeń między słowami.</li>
+            <li id="polozenieWPionie"><dfn>vertical-align</dfn> - wyrównanie w pionie, do jego wartości należą top(góra), middle(środek), bottom (dół) i domyślne baseline. <br>
+                (Działa tylko dla elementów liniowych, a nie blokowych.)</li>
+
+         </ul>
+         <hr>
+         <h2>Kolory i tła</h2>
+         <ul>
+            <li id="kolorTla"><dfn>background-color</dfn> - kolor tła</li>
+            <li id="obrazTla"><dfn>background-image</dfn> - obraz tła (np. background-image: url("tlo.jpg");)</li>
+            <li id="powtorzenieTla"><dfn>background-repeat</dfn> - rozciąganie zdjęcia jako tła elementu, jego wartości to repeat (powtarzanie w obu kierunkach), repeat-x (powtarza tylko poziomo), repeat-y (powtarza tylko pionowo), no-repeat (Wyświetlany tylko raz). </li>
+            <li id="polozenieTla"><dfn>background-position</dfn> - pozycja tła, do jego wartości należą top (góra), bottom (dół), left (lewo), right (prawo), center (środek). <br>
+            Maksymalnie przyjmuje dwie wartości, jedną w pionie i jedną w poziomie.</li>
+         </ul>
+         <hr>
+         <h2>Ramki i obramowania</h2>
+         <div id="ramka">
+         <ul>
+            <li><dfn>border-width</dfn> - grubość, wartości to thin, medium, thick lub wartość wyrażona w pikselach.</li>
+            <li><dfn>border-style</dfn> - style ramki, wartości to none, solid, dashed, double.</li>
+            <li><dfn>border-color</dfn> - kolor ramki.</li>
+         </ul>
+         <p>Obramowania te można ustawiać dla każdej strony inne wystarczy tylko, że między border, a właściwość (np. style, width) wstawicie kierunek, top, left, bottom lub right.</p>
+         </div>
+         <hr>
+         <h2>Marginesy, wypełnienia i rozmiary</h2>
+         <ul>
+            <li id="margines"><dfn>margin</dfn> - wielkość marginesu.</li>
+            <li id="wypelnienie"><dfn>padding</dfn> - wielkość wypełnienia (miejsce między krawędzią a treścią).</li>
+            <li id="szerokosc"><dfn>width</dfn> - szerokość.</li>
+            <li id="wysokosc"><dfn>height</dfn> - wysokość.</li>
+         </ul>
+         <p>Dla padding i margin można ustawiać dla każdej strony inne wartości wystarczy tylko, że po padding/margin damy -kierunek (np. -top, -bottom, -left, -right).</p>
+         <hr>
+         <h2>Listy</h2>
+         <ul>
+            <li><dfn>list-style-type</dfn> - typ podpunktora, wartości to disc, circle, square, decimal, upper-roman, lower-roman.</li>
+            <li><dfn>list-style-image</dfn> - obrazek jako podpunktor (np. list-style-image: url("podpunktor.jpg");)</li>
+            <li><dfn>list-style-position</dfn> - położenie podpunktów, inside lub outside.</li>
+         </ul>
+         <p>Przykład:</p>
+         <ul id="podpunktoryPodstwawowe">
+            <li>list-style-type</li>
+         </ul>
+         <ul id="podpunktoryZdjecie">
+            <li>list-style-image, list-style-position</li>
+         </ul>
+         <hr>
+         <h2>Priorytet stylów</h2>
+         <ol>
+            <li>styl jako bezpośredni atrybut znacznika.</li>
+            <li>styl z arkusza.</li>
+            <li>styl dziedziczony</li>
+         </ol>
+         <hr>
+         <p>Przykładowy kod CSS:</p>
+         <pre>
+         <code>
+            body{
+               background-color: black;
+               color: white;
+            }
+
+            #kolorTekstu{
+               color: #ff00ff;
+               background-color: black;
+            }
+
+            #rodzinaCzcionki{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #rozmiarCzcionki{
+               font-size: 12px;
+            }
+
+
+            #stylCzcionki{
+               font-style: italic;
+            }
+
+            #gruboscCzcionki{
+               font-weight: bold;
+
+            }
+
+            #polozenieTekstu{
+               text-align: center;
+            }
+
+            #dekoracjaTekstu{
+               text-decoration:overline;
+            }
+
+            #odlLitery{
+               letter-spacing: 5px;
+            }
+
+            #odlWyrazy{
+               word-spacing: 10px;
+
+            }
+
+            #polozenieWPionie{
+               vertical-align: bottom;
+            }
+
+            #kolorTla{
+               background-color: aqua;
+               color: black;
+            }
+            #obrazTla{
+               background-image: url("tlo.png");
+            }
+            #powtorzenieTla{
+               background-image: url("tlo.png");
+               background-repeat: repeat-x;
+            }
+            #polozenieTla{
+               background-image: url("tlo.png");
+               background-position: top left;
+            }
+
+            #ramka{
+               border-top-width: 3px;
+               border-top-style: solid;
+               border-top-color: red;
+
+               border-left-width: 4px;
+               border-left-style: dashed;
+               border-left-color: yellow;
+
+
+               border-right-style: none;
+
+
+               border-bottom-width: 9px;
+               border-bottom-style:double;
+               border-bottom-color: green;
+            }
+
+            #margines{
+               margin: 10px;
+            }
+
+            #wypelnienie{
+               padding: 8px;
+            }
+
+            #szerokosc{
+               width: 400px;
+            }
+
+            #wysokosc{
+               height: 10px;
+            }
+
+            #podpunktoryPodstwawowe{
+            list-style-type: square;
+            list-style-position: outside;
+            }
+
+            #podpunktoryZdjecie{
+            list-style-image: url("podpunktor.png");
+            list-style-position: inside;
+            }
+         </code>
+         </pre>
+         <hr>
+         <address>
+            Autor: Wiktor Frank<br>
+            Email: wiktorfrank09@gmail.com
+         </address>
+      </body>
+   </html>
